@@ -1,0 +1,174 @@
+
+{% extends "base.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+<hr class="hr hr-blurry" />
+    <figure class="text-end text-bu">
+      <blockquote class="blockquote">
+        <p>О Вашей безопасности в небе мы заботимся на земле.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+       АО Шереметьево
+      </figcaption>
+    </figure>
+    <hr class="hr hr-blurry" />
+<h2 class="text-warning">При прохождении досмотра</h2>
+<div class="container btn position-relative ">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner mb-4 w-100  ">
+      <div class="carousel-item active">
+        <div class="carousel-caption">
+          <h3>Выложите Ваши портативные компьютерные устройства в специальный лоток досмотра</h3>
+        </div>
+        <img src="static/images/pcc.jpg" class="d-block " alt="...">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="static/images/pass_stuff.jpg" class="d-block " alt="...">
+        <div class="carousel-caption mb-50">
+          <h3>Выложите все металлические вещи в лоток</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/images/up_wear2.jpg" class="d-block " alt="...">
+        <div class="carousel-caption">
+          <h3>Снимите верхнюю одежду</h3>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"><</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">></span>
+    </button>
+  </div>
+</div>
+<h2 class="text-warning">Основные разделы</h2>
+<div class="container mb-4">
+  <div class="row">
+    <div class="card btn card_main_menu" style="width: 18rem;">
+      <a  class="text-decoration-none" href="{{url_for('education_center')}}">
+      <img src={{url_for('static', filename='images/education_center.jpg')}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary text-ceter">Учебный центр</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    </div>
+    <div class="card btn card_main_menu" style="width: 18rem;">
+      <a  class="text-decoration-none"  href="{{url_for('pass_pamytka')}}">
+      <img src={{url_for('static', filename='images/pamytka_pass.jpg')}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary text-ceter">Памятка пассажира</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    </a>
+    </div>
+    <div class="card btn card_main_menu" style="width: 18rem;">
+      <a class="text-decoration-none"  href="{{url_for('talon')}}">
+      <img src={{url_for('static', filename='images/talon.png')}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary text-ceter">Электронный посадочный талон</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    
+    </div>
+    <div class="card btn card_main_menu" style="width: 18rem;">
+      <a class="text-decoration-none"  href="{{url_for('forbidden_things')}}">
+      <img src={{url_for('static', filename='images/forbid_stuff.jpg')}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary text-ceter">Запрещенные к перевозке вещества и предметы</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    
+    </div>
+   
+  </div>
+  <div class="row">
+    <div class="card btn card_main_menu" style="width: 18rem;">
+      <a class="text-decoration-none"  href="{{url_for('dont_put_off_shooes')}}">
+      <img src={{url_for('static', filename='images/botts.png')}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary text-ceter">Причины не снимать обувь и ремень (пояс)</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    
+    </div>
+    <div class="card btn card_main_menu" style="width: 18rem;">
+      <a class="text-decoration-none"  href="{{url_for('provoz_litiy')}}">
+      <img src={{url_for('static', filename='images/powerbank.avif')}} class="card-img-top " alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary text-ceter">Провоз литиевых аккумуляторов, пауэрбанков</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    
+    </div>
+    
+    <div class="card btn card_main_menu" style="width: 18rem;">
+      <a class="text-decoration-none"  href="{{url_for('special_passenger')}}">
+      <img src={{url_for('static', filename='images/invalid.avif')}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary text-ceter">Лицам с ограниченными возможностями</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    
+    </div>
+    <div class="card btn card_main_menu" style="width: 18rem;">
+      <a class="text-decoration-none"  href="{{url_for('dosmotr_terminal')}}">
+      <img src={{url_for('static', filename='images/dosmotor.jpg')}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary text-ceter">Досмотр при входе в терминал</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    
+    </div>
+  </div>
+  <div class="row">
+    <div class="card btn card_main_menu" style="width: 18rem;">
+      <a class="text-decoration-none"  href="{{url_for('passengers_questions')}}">
+      <img src={{url_for('static', filename='images/sport_equipment.avif')}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary text-ceter">Часто задаваемые вопросы</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    
+    </div>
+    <div class="card btn card_main_menu" style="width: 18rem;">
+      <a class="text-decoration-none"  href="{{url_for('perevoz_objects')}}">
+      <img src={{url_for('static', filename='images/foto_block_perevoz.jpg')}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary text-ceter">Парвила перевоза оружия, спиртных напитков, ручной клади и т.д</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    
+    </div>
+    <div class="card btn card_main_menu" style="width: 18rem;">
+      <a class="text-decoration-none"  href="{{url_for('hand_luggage')}}">
+      <img src={{url_for('static', filename='images/hand_luggage1.avif')}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary text-ceter">Ручная кладь</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    
+    </div>
+    <div class="card btn card_main_menu" style="width: 18rem;">
+      <a class="text-decoration-none"  href="{{url_for('responsive_pass')}}">
+      <img src={{url_for('static', filename='images/responsive_passenger.jpg')}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary text-ceter">Каждый пассажир должен знать о своей ответственности</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+{%endblock content%}

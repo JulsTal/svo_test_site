@@ -1,0 +1,91 @@
+{% extends "base_education.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+
+<h3 class ="text-warning text-center">Учебный центр АО "Шереметьево Безопасность"</h3>
+
+<h4 class="text-warning text-center">Приветственное слово Директора Учебного центра Полякова Владимира Александровича</h4>
+<hr>
+<h5 class="text-secondary text-center fst-italic">Дорогие коллеги! Рад приветствовать Вас на сайте Учебного центра по авиационной и транспортной безопасности АО «Шереметьево Безопасность».</h5>
+<div class="container mt-4">
+<p class="text-secondary">Учебный центр по авиационной и транспортной безопасности имеет Лицензию Министерства образования Московской области от 24 сентября 2020 года рег. №78495 серии 50Л01 №0010375 как образовательная организация профессионального обучения и дополнительного профессионального образования, а также Сертификат авиационного учебного центра №113 от 04 декабря 2017 года Федерального агентства воздушного транспорта Минтранса Российской Федерации, как авиационный учебный центр.</p>
+<p class="text-secondary">В соответствии с данными документами УЦ АТБ реализует основные и дополнительные профессиональный программы подготовки<strong> авиационного персонала</strong> по авиационной безопасности,<strong> сил обеспечения транспортной безопасности</strong>, а также иных категорий работников специализированных организаций, учебных центров, охранных предприятий и иных организаций по вопросам обеспечения безопасности. </p>
+<p class="text-secondary">Более подробно о нашем учбеном центре Вы можете узнать из данной презентации:</p>
+</div>
+<div class="container ">
+  <div class="row">
+    <div class="col-xs-1" align="center">
+  <p>
+      <button class="b_press text-warning">
+          <a class="b_press" href="/my_content/education.pdf" download="education.pdf">Презентация</a>
+      </button>
+  </p>
+</div>
+</div>
+</div>
+<div class="container">
+    <p class="text-secondary">Стоимость оказания образовательных услуг по программам указана в 
+        <button class="b_press text-warning">
+            <a class="b_press" href="/my_content/price.pdf" download="price.pdf">Прейскуранте.</a>
+        </button></p>
+      
+    <h5 class="text-warning text-center"><a class="text-warning" href='http://education.aeromash.ru/portal/login.html'>ВОЙТИ В СИСТЕМУ ДИСТАНЦИОННОГО ОБУЧЕНИЯ</a></h5>
+</div>
+<div class="conteiner mt-5 mb-5">
+  <div class="row">
+   
+    <div class="embed-responsive embed-responsive-16by9">
+      <div class="row">
+          <div class="col-xs-1" align="center">
+      <iframe
+      width="720"
+      height="405"
+      src="https://rutube.ru/play/embed/83ba669ef75adfebea7d3d5d4a801fc8"
+      frameBorder="0"
+      allow="clipboard-write; autoplay"
+      webkitAllowFullScreen
+      mozallowfullscreen
+      allowFullScreen
+    ></iframe>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row ">
+        <div class="card pt-4" style="width: 15rem;">
+            <img src={{url_for('static', filename='images/education_programs.png')}} class="card-img-top1" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-secondary">Программы подготовки </h5>
+              <a href="{{url_for('program_dop_education')}}" class="btn btn-warning1 ">Подробнее...</a>
+            </div>
+          </div>
+          <div class="card pt-4" style="width: 15rem;">
+            <img src={{url_for('static', filename='images/plan.png')}} class="card-img-top1" alt="...">
+            <div class="card-body ">
+              <h5 class="card-title text-secondary">План обучения на 2024 год</h5>
+              <a href="{{url_for('plan_education')}}" class="btn  btn-warning1">Подробнее...</a>
+            </div>
+          </div>
+          <div class="card pt-4" style="width: 15rem;">
+            <img src={{url_for('static', filename='images/certificate.png')}} class="card-img-top1" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-secondary">Сертификаты и Лицензии АУЦ</h5>
+              <a href="{{url_for('linc_sertif_edu')}}" class="btn  btn-warning1">Подробнее...</a>
+            </div>
+          </div>
+          <div class="card pt-4" style="width: 15rem;">
+            <img src={{url_for('static', filename='images/summary.png')}} class="card-img-top1" alt="..."> 
+            <div class="card-body">
+              <h5 class="card-title text-secondary mt-3">Заявка на обучение Проект Договора</h5>
+              <a href="{{url_for('education_statement')}}" class="btn  btn-warning1">Подробнее...</a>
+            </div>
+          </div>
+
+    </div>
+   
+</div>
+
+{% endblock content%}

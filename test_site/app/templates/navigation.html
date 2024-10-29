@@ -1,0 +1,72 @@
+
+
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary " >
+    <a class="navbar-brand "href="{{url_for('index')}}">
+        <img src="/static/images/logoo.jpg"  class="img-fluid" >
+    </a>
+    <button class="navbar-toggler btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse show block navbar-collapse justify-content-end" >
+    
+        <ul class=" navbar-nav" id="navbarSupportedContent1">
+                
+            <li class="nav-item  placce navbar-nav_spec_devise" >
+                <form method="POST" class="d-flex" action="{{url_for('search')}}">
+                    {{ form.csrf_token }}
+                   {{form.hidden_tag()}}
+                <div class="input-group pr-10">
+                    <input type="search" class="form-control inp_search_t" placeholder="Search" name="searched" aria-label="" aria-describedby="search-addon" />
+                    <span class="input-group-text border-30 spn" id="search-addon">
+                      <button class="btn_search" id="submit" name="submit" type="submit" value="Search"><img  class="img_lupa" src={{url_for('static', filename='images/lupa.png')}}></button>
+                      </span>         
+                </div>
+                            </form>
+            </li>
+            <li class="nav-item spec_letter_device_query" >
+                <a type="button" class="btn btn-outline-warning pad" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Служба поддержки пассажиров" href={{url_for('type_appeal')}}>Обратиться>></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="{{url_for('contacts')}}">Ru</a> 
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-3" href="{{url_for('contacts')}}">Eng</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="{{url_for('contacts')}}"><img class="eye_style" src={{url_for('static', filename='images/eye.png')}}></a>
+            </li>
+        </ul>  
+        
+       
+    </div>
+   
+</nav>
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary " >
+   
+    <div class="collapse show navbar-collapse block justify-content-center" >
+        <ul class="navbar-nav " id="navbarSupportedContent1">
+            <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="{{url_for('index')}}">Главная страница</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " aria-current="page" href="{{url_for('passenger')}}">Пассажирам</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="{{url_for('business_partners')}}">Партнерам</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="{{url_for('applicants')}}">Соискателям</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="{{url_for('about_company')}}">О компании</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="{{url_for('contacts')}}">Контакты</a>
+            </li>
+        </ul>
+        
+</div>
+       
+   
+</nav>
+

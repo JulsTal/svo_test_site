@@ -1,0 +1,136 @@
+{% extends "base2.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+
+<h3 class="text-warning mb-5">Сертификаты и лицензии</h3>
+<div class="container">
+    <div class="row">
+        <h4 class="text-secondary">Система экологического менеджмента ISO 14001:2015
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+            <img src="{{url_for('static', filename='images/ISO-14001-(IAF-BGCA)-RU_page-0001.jpg')}}" class="sertificate_photo">
+            <img src="{{url_for('static', filename='images/ISO-14001-(IAF-BGCA)-EN_page-0001.jpg')}}" class="sertificate_photo">
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Сертификат соответствия
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample1">
+            <div class="card card-body">
+                <img src="{{url_for('static', filename='images/sertifikat-1.jpg')}}" class="sertificate_photo">
+                <img src="{{url_for('static', filename='images/sertifikat-2.jpg')}}" class="sertificate_photo">
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Лицензия Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека № 77.99.15.002.Л.000964.07.05 от 15.07.2005 года
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body">
+              <img src="{{url_for('static', filename='images/Scan1.jpg')}}" class="sertificate_photo">
+            <img src="{{url_for('static', filename='images/Scan2.jpg')}}" class="sertificate_photo">
+            </div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Свидетельство (сертификат) авиационного учебного центра Федерального агентства воздушного транспорта Минтранса России №113 от 22 октября 2020 года
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample3">
+            <div class="card card-body">
+                <a class="b_press" href="/my_content/Sertifikat-UC-ATB-113-bessrochno-2021.pdf" download="Sertifikat-UC-ATB-113-bessrochno-2021.pdf">Сертификат</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Лицензия Министерства образования Московской области серия 50Л01 № 0010375 регистрационный № 78495 от 24 сентября 2020 года
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample4">
+            <div class="card card-body">
+                <a class="b_press" href="/my_content/Licenziya-novaya-2020.pdf" download="Licenziya-novaya-2020.pdf">Лицензия</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Система менеджмента качества ISO 9001:2015
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample5">
+            <div class="card card-body">
+                <img src="{{url_for('static', filename='images/ISO-9001-(IAF-BGCA)-RU_page-0001.jpg')}}" class="sertificate_photo">
+                <img src="{{url_for('static', filename='images/ISO-9001-(IAF-BGCA)-EN_page-0001.jpg')}}" class="sertificate_photo">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Свидетельство об аккредитации ТБ № 5 от 08.05.2018 года
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample6">
+            <div class="card card-body">
+                <a class="b_press" href="/my_content/svidetelstvo-ob-akkreditacii.pdf" download="svidetelstvo-ob-akkreditacii.pdf">Свидетельство об аккредитации</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Свидетельство об аккредитации аттестующей организации
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample7">
+            <div class="card card-body">
+                <a class="b_press" href="/my_content/Svidetelstvo_ob_akkreditatsii_attestuiushchei_organizatsii.pdf" download="Svidetelstvo_ob_akkreditatsii_attestuiushchei_organizatsii.pdf">Свидетельство об аккредитации</a>
+            </div>
+        </div>
+    </div>   
+  
+</div>
+
+{% endblock content%}

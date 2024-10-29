@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <div class="col-md-4">
+        <button class="btn mt-2  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <img class="btn_s_m" src={{url_for('static', filename='images/strelka_menu.png')}}>
+        </button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <img src={{url_for('static', filename='images/logo_for_contacts.jpg')}} class="img-fluid">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+          </div>
+          <div class="offcanvas-body">
+        <h1 class="display-5 " id="offcanvasWithBothOptionsLabel">Меню</h1>
+           <ul class="list group pt-3">
+            <li class="list-group-item"><a class="list-group-item" href={{url_for('forbidden_things')}}>Перечень запрещенных к перевозке веществ и предметов</a></li>
+            <li class="list-group-item"><a class="list-group-item" href={{url_for('perevoz_objects')}}>Правила перевозки пассажиров, багажа и ручной клади</a></li>
+            <li class="list-group-item"><a  class="list-group-item"href={{url_for('pass_pamytka')}}>Памятка пассажира</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('dosmotr_terminal')}}>Досмотр при входе в терминал</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('perevoz_objects')}}>Правила перевозки оружия и боеприпасов</a></li>
+            <li class="list-group-item"><a  class="list-group-item"href={{url_for('perevoz_objects')}}>Колюще-режущие предметы</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('sertificate_SanPin')}}>Санитарные нормы оборудования</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('norma_pravo')}}>Нормативная правовая база</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('passengers_questions')}}>Часто задаваемые вопросы</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('type_appeal')}}>Обратиться</a></li>
+            <li class="list-group-item"><a class="list-group-item" href={{url_for('responsive_pass')}}>Каждый пассажир должен знать о своей ответственности!</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('special_passenger')}}>Процедура досмотра пассажиров с ограниченными возможностями здоровья</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('perevoz_objects')}}>Dute Free</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('dont_put_off_shooes')}}>Причины не снимать обувь и ремень (пояс)</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('perevoz_objects')}}>Провоз пневматического оружия</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('storage_place')}}Все про хранение изъятых вещей</a></li>
+            <li class="list-group-item"><a class="list-group-item" href={{url_for('perevoz_objects')}}>Перевозка противолавинного снаряжения</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('provoz_litiy')}}>Провоз литиевых аккумуляторов</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('perevoz_objects')}}>Провоз электронных сигарет</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('perevoz_objects')}}>Провоз угля для кальянов</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('talon')}}>Электронный посадочный талон</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href={{url_for('other_info')}}>Прочая информация</a></li>
+        </ul>
+        <p class="sidebar_p">Не смогли найти нужную информацию? Задайте вопрос специалисту<a class="text-warning"href="{{url_for('type_appeal')}}"> через сайт >></a></p>
+        
+          </div>
+        </div>
+    </div>
+  </html>

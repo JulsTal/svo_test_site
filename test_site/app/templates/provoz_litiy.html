@@ -1,0 +1,174 @@
+ {% extends "base_passenger.html" %}
+ {% block title%}
+ {%endblock title%}
+ {%block content%}
+ <h3 class="text-warning mb-5 mt-5">Регламент перевозки на воздушном судне литиевых аккумуляторных батарей</h3>
+ 
+<div class="container mb-5">
+    <div class="row">
+        <p class="text-secondary">Возможность воздушной перевозки литиевого аккумулятора зависит от его конфигурации и энергоемкости (ватт/час) (для заряжаемых литий-ионных/полимерных аккумуляторов) или содержания лития (для не заряжаемых аккумуляторов из металлического лития).</p>
+        <p class="text-secondary mb-3">В целях вашей безопасности, а также безопасности остальных пассажиров, просим учитывать требования и прочитать подробные инструкции о провозе литиевых аккумуляторов.</p>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Литий-ионные аккумуляторы с удельной мощностью до 100 Втч*.
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <h5 class="text-secondary">Литий-металлические аккумуляторы
+                    с содержанием лития не более 2 г (LC)</h5>
+            <p class="text-secondary"><strong>Примеры:</strong></p>
+             <p class="text-secondary">- мобильные телефоны;</p>
+             <p class="text-secondary">- видеокамеры;</p>
+             <p class="text-secondary">- часы;</p>
+             <p class="text-secondary">- портативные музыкальные плееры;</p>
+             <p class="text-secondary">- ноутбуки;</p>
+             <p class="text-secondary">- портативные медицинские приборы.</p>
+             <p class="text-secondary"><strong>В ручной клади</strong></p>
+            <p class="text-secondary">- разрешается внутри оборудования;</p>
+            <p class="text-secondary">- запасные батареи должны отдельно защищаться таким образом, чтобы исключалась возможность короткого замыкания (например, посредством размещения в розничной упаковке, или обматывания лентой открытых полюсов, или размещения каждой батареи в отдельном пластиковом мешке или защитном пакете).</p>
+            <p class="text-secondary"><strong>В зарегистрированном багаже</strong></p>
+            <p class="text-secondary">- должны находиться внутри оборудования;</p>
+            <p class="text-secondary">- должны быть приняты меры, предотвращающие
+                их самопроизвольное приведение в действие;</p>
+            <p class="text-secondary">- провоз запасных аккумуляторов (не вставленных
+                в оборудование) запрещен.</p>
+                <img src={{url_for('static', filename='images/photo1_litiy.jpg')}} class="cuts_photo">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Литий-ионные аккумуляторы с удельной мощностью 100-160 Втч*.
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample1">
+            <div class="card card-body">
+                <h5 class="text-secondary">Литий-металлические аккумуляторы
+                    с содержанием лития 2-8 г (LC)</h5>
+            <p class="text-secondary"><strong>Примеры:</strong></p>
+            <p class="text-secondary">- ноутбуки с увеличенным ресурсом;</p>
+             <p class="text-secondary">- профессиональное аудио- и видеооборудование;</p>
+             <p class="text-secondary">- портативные медицинские приборы.</p>
+             <p class="text-secondary"><strong>В ручной клади</strong></p>
+             <p class="text-secondary">- требуется разрешение авиакомпании;</p>
+             <p class="text-secondary">- разрешается внутри оборудования;</p>
+             <p class="text-secondary">- должны быть приняты меры, предотвращающие их самопроизвольное приведение в действие;</p>
+             <p class="text-secondary">- запасные батареи должны отдельно защищаться таким образом, чтобы исключалась возможность короткого замыкания (например, посредством размещения в розничной упаковке, или обматывания лентой открытых полюсов, или размещения каждой батареи в отдельном пластиковом мешке или защитном пакете);</p>
+             <p class="text-secondary">- одному пассажиру разрешается перевозить не более двух запасных литий-металлических батарей.</p>
+             <p class="text-secondary"><strong>В зарегистрированном багаже</strong></p>
+             <p class="text-secondary">- требуется разрешение авиакомпании;</p>
+             <p class="text-secondary">- должны находиться внутри оборудования;</p>
+             <p class="text-secondary">- должны быть приняты меры, предотвращающие
+                их самопроизвольное приведение в действие;</p>
+             <p class="text-secondary"><strong></strong>- провоз запасных аккумуляторов (не
+                вставленных в оборудование) запрещен.</p>
+             <img src={{url_for('static', filename='images/photo2_litiy.jpg')}} class="cuts_photo">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Литий-ионные аккумуляторы с удельной мощностью более 160 Втч*
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body">
+            <p class="text-secondary"><strong>Примеры:</strong></p>
+             <p class="text-secondary">- промышленное оборудование, включенное в некоторые электрические и гибридные транспортные средства;</p>
+             <p class="text-secondary">- мобильные устройства и мопеды.</p>
+             <p class="text-secondary"><strong>Запрещается провозить в багаже и ручной клади</strong></p>
+             <p class="text-secondary">- Подлежат предъявлению и перевозке как «опасный груз» в соответствии с Техническими инструкциями по безопасной перевозке опасных грузов по воздуху (Doc 9284 AN\905).</p>
+             <p class="text-secondary"><strong>Исключения</strong></p>
+             <p class="text-secondary">- кресла-каталки или аналогичные мобильные средства передвижения, работающие на литий-ионных аккумуляторах, используемые пассажирами с ограниченной подвижностью вследствие особого состояния здоровья, возраста или временных состояний
+                (например, при переломе ноги);</p>
+             <p class="text-secondary">- командира воздушного судна необходимо ставить
+                в известность о месте расположения ионно-литиевой(ых) батареи(й);</p>
+             <p class="text-secondary">- требуется разрешение авиакомпании.</p>
+             <p class="text-secondary">Средства передвижения должны перевозиться таким образом, чтобы они были защищены от повреждений, вызываемых перемещением багажа, почты, бортприпасов или другого груза.</p>
+             <p class="text-secondary">Можно провозить как зарегистрированный багаж<strong> при условии:</strong></p>
+             <p class="text-secondary">- клеммы батареи защищены от коротких замыканий (например, посредством ограждения в
+                батарейном ящике);</p>
+             <p class="text-secondary">- батарея надежно закреплена в средстве передвижения;</p>
+             <p class="text-secondary">- электрические цепи должны быть изолированы.</p>
+             <p class="text-secondary">Если подвижное средство/кресло-каталка сконструировано так, что имеется возможность пользователем извлечь батарею (например, складное), то:</p>
+             <p class="text-secondary">- батарея должна быть извлечена;</p>
+             <p class="text-secondary">- батареи должны быть защищены от короткого замыкания путем изоляции терминала (заклеив лентой);</p>
+             <p class="text-secondary">- снятые батареи должны быть защищены от повреждений (помещены в защитную упаковку).</p>
+             <p class="text-secondary"><strong>Батареи должны провозиться в пассажирском салоне;</strogn></p>
+             <p class="text-secondary">- мощность батареи не должна превышать 300Втч;</p>
+             <p class="text-secondary">- можно провозить только одну запасную батарею мощностью не более 300Втч, или две запасные батареи, каждая из которых не превышает мощности в 160Втч.</strong></p>
+             <p class="text-secondary"><strong>Кресло-каталка при этом перевозится как зарегистрированный багаж.</strong></p>
+             <img src={{url_for('static', filename='images/photo3_litiy.jpg')}} class="cuts_photo">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Малогабаритные средства для личного передвижения, работающие на литиевых батареях
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample3">
+            <div class="card card-body">
+                <h5 class="text-secondary">Перевозка в качестве зарегистрированного багажа и ручной клади малогабаритных средств для личного передвижения, работающих на литиевых батареях
+                </h5>
+            <p class="text-secondary">Малогабаритные средства для личного
+                передвижения включают:</p>
+             <p class="text-secondary"><strong>моноколеса</strong></p>
+             <p class="text-secondary"><strong>сегвеи (мини-сегвеи)</strong></p>
+             <p class="text-secondary"><strong>ховеборды</strong></p>
+             <p class="text-secondary"><strong>гироскрутеры</strong></p>
+             <p class="text-secondary"><strong>электросамокаты</strong></p>
+             <p class="text-secondary">На основании рекомендаций IATA, воздушная перевозка указанных средств на рейсах ПАО «Аэрофлот» возможна в качестве зарегистрированного багажа при условии отсутствия в средстве передвижения литиевой батареи.</p>
+             <p class="text-secondary">Извлеченная из средства передвижения литиевая батарея допускается к перевозке только в ручной
+                клади при  условии, что мощность батареи не
+                превышает установленной нормы -  160 Ватт-час (Втч, W/h).</p>
+             <p class="text-secondary"><strong>Малогабаритное средство с встроенной (не извлекаемой) литиевой батареей можно провозить при оформлении его в качестве "опасного груза" через грузовой терминал аэропорта.</strong></p>
+             <img src={{url_for('static', filename='images/photo4_litiy.jpg')}} class="cuts_photo">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Зарядные банки (Power Bank, внешние аккумуляторы, портативные зарядные устройства)
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample4">
+            <div class="card card-body">
+             <p class="text-secondary">Портативные зарядные устройства (внешние аккумуляторы, внешние зарядные устройства, пауэрбанки (Power Bank), портативные пуско-зарядные устройства), содержащие литиевые аккумуляторы, должны перевозиться только в вещах, находящихся при пассажире (ручной клади), при этом должны отдельно защищаться таким образом, чтобы исключалась возможность короткого замыкания (посредством размещения в оригинальной розничной упаковке или изолирования клемм иным способом, например, путем обматывания лентой открытых клемм или размещения каждой батареи в отдельном пластиковом пакете или защитном чехле), с учётом выполнения требований, указанных для литиевых аккумуляторов:</p>
+             <p class="text-secondary">Каждая батарея должна характеризоваться следующими параметрами:</p>
+             <p class="text-secondary">- содержание лития в литий-металлических батареях не превышает 2 г;</p>
+             <p class="text-secondary">- удельная мощность литий-ионных батарей не превышает 100 Втч;</p>
+             <p class="text-secondary">- свыше 100 Втч до 160 Втч включительно – перевозится не более двух и требуется разрешение авиакомпании (перевозчика).</p>
+             <p class="text-secondary">Портативные зарядные устройства и запасные батареи с содержанием лития и удельной мощностью свыше 160 Втч <strong>ЗАПРЕЩЕНЫ</strong> для провоза пассажирами.</p>
+             <p class="text-secondary">В случае передвижения на кресле-каталке, приводимой в действие литий-ионными батареями, с разрешения эксплуатанта, можно перевозить в ручной клади только одну запасную батарею энергоемкостью (удельной мощностью) не более 300 Втч или две запасные батареи, энергоемкость (удельная мощность) каждой из которых не превышает 160 Втч, при этом клеммы батареи должны быть защищены от короткого замыкания и от повреждения.</p>
+             <p class="text-secondary">Провоз портативных зарядных устройств (внешних аккумуляторов, внешних зарядных устройств, пауэрбанков (Power Bank), портативных пуско-зарядных устройств) в <strong>ЗАРЕГИСТРИРОВАННОМ</strong> багаже<strong> ЗАПРЕЩЕН</strong>.</p>
+             <p class="text-secondary">Расчёт удельной мощности производится по следующей формуле:</p>
+             <p class="text-secondary">1 Втч (Wh) = 1 В (V) * 1 Ач (Ah), где Втч – Ватт-час, В – Вольт, Ач – Ампер-час</p>
+             <p class="text-secondary"><strong>Обращаем Ваше внимание, что в соответствие с Правилами проведения предполетного и послеполетного досмотров (приказ Минтранса России от 25.07.2007 г. № 104) досмотр багажа может производиться как в присутствии пассажира, так и в его отсутствие с целью предотвращения допуска на борт воздушного судна запрещенных к провозу предметов и веществ. Таким образом, в случае Вашей неявки в помещение ручного досмотра Ваш багаж будет вскрыт в Ваше отсутствие. Досмотр багажа, проведенный в отсутствие пассажира, оформляется актом досмотра багажа. Акт приобщается к багажу, досмотренному в отсутствии пассажира. Просим воздерживаться от запирания вашего багажа посредством кодовых замков и дополнительных приспособлений, которые могут затруднить доступ к содержимому.</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+  {%endblock content%}

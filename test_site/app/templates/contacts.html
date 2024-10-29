@@ -1,0 +1,53 @@
+{% extends "base_contacts.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+
+<h3 class ="display-7 text-warning">Контакты</h3>
+<div class="container btn text-secondary">
+    <div class="row">
+    <div class="col text-center border">
+        <img src={{url_for('static', filename='images/contacts_trud.png')}}>
+        <h4> Телефон по вопросам трудоустройства</h4>
+        <p>8-925-633-31-15</p>
+        <p> 8-925-344-79-02</p>
+        <p>Также действует Колл-центр: 8-495-755-68-07 кнопка быстрого вызова - 1</p>
+        
+    </div>
+    <div class="col text-center border ">
+        <img src={{url_for('static', filename='images/provoz.png')}}>
+        <h4> Телефон по вопросам правил провоза предметов и веществ</h4>
+        <p>8-495-755-68-08, доб. 322</p>
+    </div>    
+    <div class="col text-center border">
+        <img src={{url_for('static', filename='images/aircraft.ico')}}>
+        <h4> Учебный центр по авиационной и транспортной безопасности</h4>
+        <p>тел. +7 (495) 755-68-07 доб. 198/130</p>
+        <p>e-mail: sb.sekretar@svo.aero</p>
+    </div>   
+    <div class="col text-center border">
+        <img src={{url_for('static', filename='images/main_director.png')}}>
+        <h4> Приемная Генерального директора</h4>
+        <p>тел.: +7 (495) 755-68-07</p>
+        <p>факс: +7 (495) 755-68-12</p>
+        <p>e-mail: sb.sekretar@svo.aero</p>
+    </div>        
+    </div>
+    <h3 class ="display-7 text-warning">Адрес и схема проезда</h3>
+    <div class="row">
+        <h5 class="text-secondary text-start">Адрес:</h5>
+        <h5 class="text-secondary text-start"> Московская область, Химки, Шереметьевское шоссе, вл.6К, офис "Шереметьево Москва Карго".</h5>
+        <h5 class="text-secondary text-start">GPS координаты:</5>
+        <a class="text-warning">55.985519, 37.428118</a>
+    </div>
+    <div class="row">
+      
+            <div id="map" class="col-md-8 mx-auto" ></div>
+       
+    </div>
+</div>
+
+
+
+
+{% endblock content%}

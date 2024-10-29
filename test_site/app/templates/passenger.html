@@ -1,0 +1,18 @@
+{% extends 'base_passenger.html'%}
+{% block content%}
+<h2 class="text-warning mb-3">Основные разделы</h2>
+<div class="container">
+  <div class="row">
+  {% for card in cards[0:12] %}
+    <div class="card btn card_main_menu col-md-4" style="width: 18rem;">
+      <a class="text-decoration-none" href="{{url_for(card.address)}}">
+      <img src={{url_for('static',  filename='images/'+ card.image)}} class="card-img-top " alt="...">
+      <div class="card-body">
+        <h5 class="card-text text-secondary">{{card.name_card}}</h5>
+        <p class="text-warning">Подробнее...</p></a>
+      </div>
+    </div>
+  {% endfor%}
+  </div>
+</div>
+{%endblock%}

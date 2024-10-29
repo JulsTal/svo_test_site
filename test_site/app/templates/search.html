@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+{%block title%}
+{% endblock title%}
+{%block content%}
+<br/>
+<h2 class="text-secondary">Ответы по запросу: {{searched}}</h2>
+
+{% for card in cards%}
+<a href="{{url_for(card.address)}}" class="text-warning">{{card.name_card}}</a><br/>
+<hr>
+{%endfor%}
+{%endblock content%}

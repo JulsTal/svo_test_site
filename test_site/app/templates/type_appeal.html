@@ -1,0 +1,24 @@
+{% extends "base_passenger.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+<h3 class="text-warning mb-5 mt-5">Выберете тип обращения</h3>
+<hr>
+<div class="container mt-3">
+    <div class="row pb-3">
+        <div class="col-xs-1" align="center">
+            <a type="button" class="btn btn-warning1 pad" href={{url_for('add_letter')}}>Оставить обращение, связанное с работой организации
+                АО "Шереметьево Безопасность"</a>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1" align="center">
+            <a type="button" class="btn btn-warning1 pad" href={{url_for('add_question')}}>Задать вопрос, касающийся провоза на борту воздушного судна предметов и вещей</a>
+
+        </div>
+    </div>
+</div> 
+<hr>
+
+{% endblock content%}

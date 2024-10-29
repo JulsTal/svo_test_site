@@ -1,0 +1,20 @@
+{% extends 'base_passenger.html'%}
+{% block content%}
+<h2 class="text-warning">Санитарные нормы оборудования</h2>
+<div class="container"> 
+    <div class="row">
+        <div class="col-xs-1"align="center">
+        <p class="text-secondary">На все рентгеновские установки для досмотра багажа и товаров (РУДБТ) имеются санитарно-эпидемиологические заключения, сертификаты соответствия, а также санитарно-эпидемиологическое заключение на деятельность, связанную с источниками ионизирующих излучений.</p>
+        <img class="sertificate_photo" src={{url_for('static', filename='images/sertificate1_Sanpin.png')}}>
+        <img  class="sertificate_photo"src={{url_for('static', filename='images/sertificate2_Sanpin.png')}}>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1"align="center">
+       <img  class="sertificate_photo" src={{url_for('static', filename='images/sertificate3_Sanpin.png')}}>
+      <img  class="sertificate_photo" src={{url_for('static', filename='images/sertificate4_Sanpin.png')}}>
+        </div>
+    </div>
+    <p class="text-secondary mt-4">Предприятие имеет радиационно-гигиенический паспорт организации, использующей источники ионизирующего излучения, который оформлен в ТУ Роспотребнадзора г. Москвы. Ежегодно составляется форма статистической отчетности по дозам облучения ДОЗ-1. Проводится индивидуальный дозиметрический контроль работников отнесенных к группе «А», средний уровень эквивалентной дозы 1,24 мЗв в год при допустимой дозе 20 мЗв в год. Средняя мощность дозы рентгеновского излучения на внешней поверхности установок  0,3 мкЗв/ч, при допустимой дозе не более 2,5 мкЗв/ч.</p>
+</div>
+{%endblock%}

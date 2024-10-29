@@ -1,0 +1,202 @@
+{%extends 'base_passenger.html'%}
+{% block title%}
+
+{%endblock title%}
+{%block content%}
+<h3 class="text-warning mb-5">Правила провоза вещей по категориям</h3>
+<div class="container">
+    <div class="row">
+        <h4 class="text-secondary">Правила перевозки пассажиров, багажа и ручной клади
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+              </button>
+        </h4>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <img src={{url_for('static', filename='images/dosmotr_ico.png')}} class="ico_for_razdel_klad">
+                <h5 class="text-secondary">Правила перевозки пассажиров</h5>
+                <p class="text-secondary">Перед посадкой на борт воздушного судна каждый пассажир, вещи, находящиеся при нем, и багаж обязаны пройти процедуры предполетного досмотра. Пассажир, отказавшийся пройти предполетный досмотр и предъявить свои вещи для досмотра, к полету не допускается.</p>
+                <img src={{url_for('static', filename='images/luggage.png')}} class="ico_for_razdel_klad">
+                <h5 class="text-secondary">Количество мест ркчной клади, ее размер и вес</h5>
+                <p class="text-secondary">Нормы ручной клади в самолете, которые чаще всего встречаются у авиаперевозчиков: в бизнес-классе и в первом классе — это одно место багажа при весе до 15 кг, в эконом-классе — не более 10 кг (оно может быть и 5-6 кг). Размер одного места багажа не должен превышать 115 см в сумме трех измерений (55×40×20см).</p>
+                <img src={{url_for('static', filename='images/luggage_liquid.png')}} class="ico_for_razdel_klad">
+                <h5 class="text-secondary">Жидкости в ручной клади</h5>
+                <p class="text-secondary">Если нет необходимости дополнительных мер безопасности, то при провозе жидкостей в ручной клади также существуют общие требования по безопасности. А именно: в ручной клади разрешается провозить жидкости в упаковках <strong>не более 100 мл</strong>, общий объем которых<strong> не превышает 1 литр.</strong> </p>
+                <img src={{url_for('static', filename='images/provoz.png')}} class="ico_for_razdel_klad">
+                <h5 class="text-secondary">Сдаваемый багаж</h5>
+                <p class="text-secondary">Как правило, сведения о максимальном весе багажа, который разрешено провозить бесплатно, указываются на авиабилете, в том числе на электронном. Чаще всего это<strong> 30 кг для пассажиров бизнес-класса и первого класса, 20 кг для пассажиров экономического класса.</strong></p>
+                <img src={{url_for('static', filename='images/hand_luggage.png')}} class="ico_for_razdel_klad">
+                <h5 class="text-secondary">Что можно брать в ручную кладь и приносить в самолет</h5>
+                <p class="text-secondary">Прежде всего, это должны быть самые необходимые для вас вещи:<strong> деньги, документы, кредитные карты</strong>, ноутбук, планшет, телефон, драгоценности, небольшие хрупкие вещи, лекарства, возможно - специальное питание для вас или ваших детей.</p>
+                <img src={{url_for('static', filename='images/not_luggage.png')}} class="ico_for_razdel_klad">
+                <h5 class="text-secondary">Что нельзя брать в ручную кладь и проносить в самолет</h5>
+                <p class="text-secondary">Есть общие правила безопасности, согласно которым на борту самолета запрещается перевозить:<strong> опасные предметы и вещества, такие как оружие, воспламеняющиеся вещества и жидкости, токсические/ядовитые/радиоактивные вещества, а также любые колющие и режущие предметы.</strong></p>
+                <h5 class="text-warning text-center">Уважаемые пассажиры и посетители Международного аэропорта Шереметьево!</h5>
+                <h5 class="text-warning text-center">С целью экономии Вашего времени и удобства прохождения процедуры досмотра, организованного на входах в терминалы Международного аэропорта Шереметьево, рекомендуем размещать все электронные гаджеты и приборы (ноутбуки, планшетные компьютеры, фото-видео аппаратуру и т.п.) в вещах так, чтобы Вам было легко предъявить эти предметы для ручного (контактного) и визуального досмотра.</h5>
+                <h5 class="text-warning text-center">Желаем Вам приятного полёта и пребывания в Международном аэропорту Шереметьево!</h5>
+               
+            </div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Правила перевоза спиртных напитков из Dute Free
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample1">
+            <div class="card card-body">
+             <p class="text-secondary">Спиртные напитки, приобретенные в магазинах беспошлинной торговли (Duty Free), должны быть надежно упакованы в запечатанный пластиковый пакет c чеком, подтверждающим совершение покупки в магазинах беспошлинной торговли в дни поездки.</p> 
+             <p class="text-secondary">Запрещено вскрытие пакетов со спиртными напитками, приобретенными в магазинах беспошлинной торговли, до окончания воздушной перевозки!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <h4 class="text-secondary">Провоз пневматического оружия
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body">
+            <p class="text-secondary">Перевозка воздушным транспортом пневматического оружия с дульной энергией до 3 Дж по территории РФ осуществляется только в зарегистрированном багаже. Необходимо иметь документы на пневматическое оружие (технический паспорт изделия) в которых должна быть указана информация о силе дульной энергии. При прохождении предполетного досмотра пневматическое оружие и документы на него будут проверены сотрудником полиции. В случае перевозки пневматического оружия с дульной энергией свыше 3 Дж до 7,5 Дж и калибром до 4,5 мм, такое оружие должно быть оформлено и передано уполномоченному работнику службы безопасности для перевозки установленным в авиакомпании порядком. Пневматическое оружие свыше 7,5 Дж и калибром свыше 4,5 мм перевозится при наличии разрешительных документов на право хранения и ношения в соответствии с вышеописанной процедурой.
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Перевозка противолавинного снаряжения
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample3">
+            <div class="card card-body">
+            <p class="text-secondary">Для любителей экстремальных видов спорта с использованием альпинистского снаряжения необходимо помнить!!!</p>
+            <p class="text-secondary">В соответствии с требованиями п.12 Таблицы 8.1 Положений, касающиеся опасных грузов, перевозимых пассажирами или членами экипажа Технических инструкций по безопасной перевозке опасных грузов по воздуху (DOC 9284 ICAO) Баллончики категории 2.2, не характеризующиеся дополнительной опасностью и вставленные в самонадувающееся индивидуальное спасательное средство, например, 
+                спасательный жилет или спасательную куртку, могут перевозиться как в зарегистрированном багаже, так и в ручной клади при условии соблюдения следующих требований:</p>
+            <p class="text-secondary">a) не более одного индивидуального спасательного средства на одно лицо;</p>
+            <p class="text-secondary">b) индивидуальное спасательного средство должно быть упаковано таким образом, чтобы не допустить его случайной активации;</p>
+            <p class="text-secondary">с) должны быть предназначены для надувания;</p>
+            <p class="text-secondary">d) устройство должно быть оснащено не более чем двумя баллончиками;</p>
+            <p class="text-secondary">e) не более двух запасных баллончиков.</p>
+            <p class="text-secondary"><strong>Для перевозки указанных предметов требуется разрешение авиакомпании перевозчика!!!</strong></p>
+           
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Провоз электронных сигарет
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample4">
+            <div class="card card-body">
+                <p class="text-secondary">Международная организация гражданской авиации (ICAO) допускает провоз пассажирами и членами экипажей в ручной клади электронных сигарет и зарядных устройств для них. 
+                    Провоз других портативных электронных устройств (испарителей) для курения, работающих от батарей/аккумуляторов допускается при условии соблюдения следующих требований:</p>
+                <p class="text-secondary"> -  электронное устройство оснащено небольшой литиевой батареей/аккумулятором энергоемкостью до 100 Вт-ч / с содержанием лития не более 2 г (LC)(провозится внутри оборудования);</p>
+                <p class="text-secondary"> -  запасные аккумуляторы к устройству должны отдельно защищаться таким образом, чтобы исключалась возможность короткого замыкания (в розничной упаковке, обмотанные изоляционной лентой открытых полюсов или размещение каждой батареи в отдельном пластиковом мешке или защитном пакете).</p>
+                <h5 class="text-secondary"><strong>ВАЖНО!</strong>  Использование (курение) электронных сигарет и подзарядка этих устройств на борту воздушного судна запрещены.</h5>
+                <p class="text-secondary"><strong>Жидкости для электронных сигарет</strong></p>
+                <p class="text-secondary">Жидкость должна находиться в заводской, маркированной упаковке и иметь на упаковке перечень содержащихся в ней компонентов, а также соответствовать требованиям по провозу емкостей в ручной клади и багаже.</p>
+                
+                    <img src={{url_for('static', filename='images/vape.jpg')}} class="cuts_photo">
+                
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Провоз угля для кальянов
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample5">
+            <div class="card card-body">
+             <p class="text-secondary">Уголь для кальяна является легковоспламеняющимся твердым веществом растительного происхождения (обычный древесный уголь, кокосовый уголь, быстро возгорающийся уголь (уголь, пропитанный специальным составом быстро возгорающейся селитры) и др.).</p>
+            <p class="text-secondary"><strong>ВАЖНО!</strong> ВСЕ ВИДЫ угля классифицируются как опасный груз и не допускается к провозу на воздушном транспорте ни в багаже, ни в ручной клади пассажиров и членов экипажа.</p>
+           
+            <img src={{url_for('static', filename='images/ugol_kalyan.jpg')}} class="cuts_photo">
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Правила перевозки оружия и боеприпасов
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample6">
+            <div class="card card-body">
+              <p class="text-secondary">В соответствии с требованиями п. 3 Федеральных авиационных правил «О воздушной перевозке оружия и патронов», утверждённых Минтранса России от 29 декабря 2021 г. № 275, оружие должно приниматься к перевозке в разряженном состоянии при наличии:</p>
+              <p class="text-secondary">лицензии или разрешения, указанных в пункте 77 Правил оборота гражданского и служебного оружия и патронов на территории Российской Федерации, утвержденных постановлением Правительства Российской Федерации от 21 июля 1998 г. N 814 (Собрание законодательства Российской Федерации, 1998, N 32, ст. 3878; 2018, N 21, ст. 3023) (далее - Правила оборота гражданского и служебного оружия), для гражданского и служебного оружия.</p>
+              <p class="text-secondary">Порядок прохождения досмотров и регистрации при перевозке оружия и боеприпасов:</p>
+              <p class="text-secondary">1. Необходимо заблаговременно приехать в аэропорт, с учётом времени прохождения досмотра на входе в аэропорт и дальнейшей процедуры регистрации пассажиров, оружия, боеприпасов и передачи оружия на период полёта.</p>
+              <p class="text-secondary">2. При входе в терминалы международного аэропорта Шереметьево перед прохождением досмотра необходимо заявить работникам АО «Шереметьево Безопасность» о наличии у Вас оружия и боеприпасов.</p>
+              <p class="text-secondary">3. По требования инспектора по досмотру предъявить разрешительные документы на оружие. Необходимо быть готовым к проверке разрешительных документов с привлечением сотрудника полиции.</p>
+              <p class="text-secondary">4. По окончании досмотра на входе в аэропорт пройти на линию регистрации пассажиров и проинформировать диспетчера о намерении перевезти оружие и боеприпасы.</p>
+              <p class="text-secondary">5. Пройти регистрацию (оформление) оружия к перевозке авиакомпанией на стойке регистрации. Пассажир с оружием после регистрации должен прибыть в комнату оформления оружия не позднее, чем за 50 минут до окончания регистрации, номер и место расположения комнаты оформления оружия сообщается диспетчером при регистрации.</p>
+              <p class="text-secondary">6. После регистрации (оформлении) оружия и боеприпасов к перевозке пройти в комнату оформления оружия (оружейную комнату).</p>
+              <p class="text-secondary">7. После проверки разрешительных документов, оружия и боеприпасов в оружейной комнате, пройти процедуру передачи оружия для временного хранения на период полёта.</p>
+              <p class="text-secondary">8. Патроны к оружию должны размещаться отдельно от оружия.</p>
+              <p class="text-secondary">Калибр принимаемых патронов должен соответствовать калибру, указанному в лицензии на оружие, либо разрешении на его хранение, хранение и ношение, хранение и использование конкретных видов, типов и моделей оружия.</p>
+              <p class="text-secondary">9. К перевозке в качестве зарегистрированного багажа от одного пассажира должно приниматься оружие, в количестве не превышающем 5 единиц, патроны, в количестве не превышающем 1000 штук, весом не более 5 кг (категории 1.4S, отнесенные к опасным грузам, Doc 9284 AN/905 «Безопасная перевозка опасных грузов по воздуху» Конвенции о международной гражданской авиации, упакованных в чехлах, кобурах или специальных футлярах, а также в специальной упаковке производителя оружия (для иностранных граждан транспортировка ввезенного на территорию Российской Федерации оружия в целях охоты и участия в спортивных мероприятиях до места проведения соответствующего мероприятия осуществляется в запирающихся кейсах</p>
+              <p class="text-secondary">10. При осуществлении перелёта за пределы Российской Федерации, по вопросу перевозки оружия и патронов к нему, рекомендую обратиться в Федеральную таможенную службу России и в уполномоченные органы той страны, в/из которую/ой Вы планируете совершить перелёт.</p>
+              <p class="text-secondary">11. Электрошоковые устройства и искровые разрядники отечественного производства относятся к гражданскому оружию и принимаются к перевозке авиаперевозчиком также, как и огнестрельное оружие. При себе необходимо иметь документ с техническими характеристиками для проверки соответствия выходных параметров устройства установленным государственным стандартам. Электрошоковые устройства и искровые разрядники, содержащие опасные вложения, такие как взрывчатые вещества, сжатые газы, литиевые батареи и т.д. запрещены для провоза.</p>
+              <p class="text-secondary"><strong>Оборот и перевозка иностранных электрошоковых устройств запрещается.</strong></p>
+              <h5 class="text-secondary"><strong>ВАЖНО!!!</strong></h5>
+              <p class="text-secondary">Правила перевозки багажа и вещей, находящихся при Вас, в том числе правила перевозки оружия и/или боеприпасов к нему, времени начала регистрации на рейс, следует ОБЯЗАТЕЛЬНО уточнить у авиакомпании перевозчика.</p>
+              <p class="text-secondary">Передача оружия и боеприпасов уполномоченному лицу на период полёта производится только после принятия авиакомпанией данного оружия и боеприпасов к перевозке.</p>
+              <p class="text-secondary">Имитаторы оружия (пистолетов, револьверов, винтовок, карабинов, автоматов, электрошоковых устройств и т.п.) перевозить в салонах воздушных судов запрещается.</p>
+              <p class="text-secondary">Перевозка имитаторов оружия допускается только в зарегистрированном багаже.</p>
+              <p class="text-secondary">Перевозка боеприпасов с разрывными или зажигательными пулями, патронов для газового оружия, а также устройств, снаряженных слезоточивыми или раздражающими веществами, на борту воздушных судов гражданской авиации запрещена.</p>
+             
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Колюще-режущие предметы
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample7">
+            <div class="card card-body">
+              <p class="text-secondary">В международном аэропорту Шереметьево действуют дополнительные меры безопасности,
+                 ограничивающие провоз в ручной клади (при себе) в салоне воздушного судна, колюще-режущих предметов и других опасных устройств бытового назначения,
+                  разрешённых для провоза в зарегистрированном багаже. Ограничены для провоза в салоне воздушного судна следующие предметы: ножи, вилки, маникюрные и др. ножницы, кусачки, пилки с конусообразным наконечником, спицы и крючки для вязания и т.п. Данные предметы допустимы для провоза только в зарегистрированном багаже. </p>
+              </p>
+              <img src={{url_for('static', filename='images/cuts.jpg')}} class="cuts_photo">
+            </div>
+          </div>
+    </div>
+   
+</div>
+{%endblock content%}

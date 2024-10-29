@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <div class="col-md-4">
+        <button class="btn mt-2  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <img class="btn_s_m" src={{url_for('static', filename='images/strelka_menu.png')}}>
+        </button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <img src={{url_for('static', filename='images/logo_for_contacts.jpg')}} class="img-fluid">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+          </div>
+          <div class="offcanvas-body">
+        <h1 class="display-5 " id="offcanvasWithBothOptionsLabel">Меню</h1>
+           <ul class="list group pt-3">
+            <li class="list-group-item"><a class="list-group-item" href="#">Важно знать пассажирам</a></li>
+            <li class="list-group-item"><a class="list-group-item" href="#">Перечень запрещенных к перевозке веществ и предметов</a></li>
+            <li class="list-group-item"><a class="list-group-item" href="#">Правила перевозки пассажиров, багажа и ручной клади</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Памятка пассажира</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Досмотр при взоде в терминал</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Правила перевозки оружия и боеприпасов</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Колюще-режущие предметы</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Санитарные нормы оборудования</a></li>
+            <li class="list-group-item"><a class="list-group-item" href="#">Нормативная правовая база</a></li>
+            <li class="list-group-item"><a class="list-group-item" href="#">Часто задаваемые вопросы</a></li>
+            <li class="list-group-item"><a class="list-group-item" href="#">Обратиться</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Каждый пассажир должен знать о совей ответственности!</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Процедура досмотра пассажиров с органиченными возможностями здоровья</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Duty Free</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Учебное видео</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Причины не снимать обувь и ремень (пояс):</a></li>
+            <li class="list-group-item"><a class="list-group-item" href="#">Перевоз пневматического оружия</a></li>
+            <li class="list-group-item"><a class="list-group-item" href="#">Изъятые в ходе предполетного досмотра вещества и предметы можно забрать здесь!</a></li>
+            <li class="list-group-item"><a class="list-group-item" href="#">Перевозка противолавинного снаряжения</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Провоз литиевых аккумуляторов</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Провоз электронных сигарет</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Провоз угля для кальянов</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Электронный посадочный талон</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="#">Прочая информация</a></li>
+        </ul>
+        <p class="sidebar_p">Не смогли найти нужную информацию? Задайте вопрос специалисту<a class="text-warning" href="{{url_for('type_appeal')}}"> через сайт >></a></p>
+        
+          </div>
+        </div>
+    </div>
+  </html>

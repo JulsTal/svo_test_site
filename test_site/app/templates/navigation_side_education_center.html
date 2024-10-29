@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <div class="col-md-4">
+        <button class="btn mt-2  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <img class="btn_s_m" src={{url_for('static', filename='images/strelka_menu.png')}}>
+        </button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <img src={{url_for('static', filename='images/logo_for_contacts.jpg')}} class="img-fluid">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+          </div>
+          <div class="offcanvas-body">
+        <h1 class="display-5 " id="offcanvasWithBothOptionsLabel">Меню</h1>
+           <ul class="list group pt-3">
+            <li class="list-group-item">
+              <a href='#' class="list-group-item nav-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#dash_menu" aria-expanded="false" aria-controls="dash">
+                Сведения об образовательной организации
+              </a>
+            <ul id="dash_menu" class="list-group list-group-flush sidabar-dropdown collapse" data-bs-parent="sidebar">
+                <li class="list-group-item">
+                  <img src={{url_for('static', filename='images/info_about.png')}} class="card-img-nav-side-dash" alt="...">
+                  <a href="{{url_for('about_educational_center')}}" class="href-decor-sidebar-dash">Краткая справка<a>
+                </li>
+                <li class="list-group-item">
+                  <img src={{url_for('static', filename='images/main_info.png')}} class="card-img-nav-side-dash" alt="...">
+                  <a href="{{url_for('info_edu_center')}}" class="href-decor-sidebar-dash">Основные сведения<a>
+                </li>
+                <li class="list-group-item">
+                  <img src={{url_for('static', filename='images/structure.png')}} class="card-img-nav-side-dash" alt="...">
+                  <a href="{{url_for('edu_structure')}}" class="href-decor-sidebar-dash">Структура, органы управдения и положение об учебном центре<a>
+                </li>
+                <li class="list-group-item">
+                  <img src={{url_for('static', filename='images/document.png')}} class="card-img-nav-side-dash" alt="...">
+                  <a href="{{url_for('educ_doc')}}" class="href-decor-sidebar-dash">Документы<a>
+                </li>
+                <li class="list-group-item">
+                  <img src={{url_for('static', filename='images/education.png')}} class="card-img-nav-side-dash" alt="...">
+                  <a href="{{url_for('edu_education')}}"  class="href-decor-sidebar-dash">Образование<a>
+                </li>
+                <li class="list-group-item">
+                  <img src={{url_for('static', filename='images/director.png')}} class="card-img-nav-side-dash" alt="...">
+                  <a href="{{url_for('edu_pedagog')}}" class="href-decor-sidebar-dash">Руководство. Педагогический (научно-педагогический) состав<a>
+                </li>
+                <li class="list-group-item">
+                  <img src={{url_for('static', filename='images/teh_provision.png')}} class="card-img-nav-side-dash" alt="...">
+                  <a href="{{url_for('mat_teq_provision')}}" class="href-decor-sidebar-dash">Материально-техническое обеспечение и оснащенность образовательного процесса<a>
+                </li>
+                <li class="list-group-item">
+                  <img src={{url_for('static', filename='images/education_service.png')}} class="card-img-nav-side-dash" alt="...">
+                  <a href="{{url_for('the_financial_part')}}" class="href-decor-sidebar-dash">Платные образовательные услуги и финансово-хозяйственная деятельность<a>
+                </li>
+                <li class="list-group-item">
+                  <img src={{url_for('static', filename='images/transfer_places.png')}} class="card-img-nav-side-dash" alt="...">
+                  <a href="{{url_for('vacants_places')}}" class="href-decor-sidebar-dash">Вакантные места для приема (перевода) обучающихся<a>
+                </li>
+                <li class="list-group-item">
+                  <img src={{url_for('static', filename='images/available_env.png')}} class="card-img-nav-side-dash" alt="...">
+                  <a href="{{url_for('available_environment')}}" class="href-decor-sidebar-dash">Доступная среда<a>
+                </li>
+                <li class="list-group-item">
+                  <img src={{url_for('static', filename='images/international_cooperation.png')}} class="card-img-nav-side-dash" alt="...">
+                  <a href="{{url_for('international_cooperation')}}" class="href-decor-sidebar-dash">Международное сотрудничество<a>
+                </li>
+            </ul> 
+          </li>  
+            <li class="list-group-item"><a class="list-group-item" href="{{url_for('linc_sertif_edu')}}">Сертификаты, лицензии и прейскуранты</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="{{url_for('education_statement')}}">Заявка на обучение</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="{{url_for('defend_job')}}">Охрана труда в авиационной безопасности</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="{{url_for('plan_education')}}">План обучения на 2024 год</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="{{url_for('edu_center_annotations')}}">Учебный Центр - аннотации</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="{{url_for('education_video')}}">Учебное видео</a></li>
+            <li class="list-group-item"><a  class="list-group-item"  href="{{url_for('program_dop_education')}}">Программы дополнительного профессионального образования</a></li>
+            <li class="list-group-item"><a class="list-group-item" href="{{url_for('other_info')}}">Прочее</a></li>
+        </ul>
+        <p class="sidebar_p">Не смогли найти нужную информацию? Задайте вопрос специалисту<a class="text-warning" href="{{url_for('type_appeal')}}"> через сайт >></a></p>
+        
+          </div>
+        </div>
+    </div>
+  </html>

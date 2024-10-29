@@ -1,0 +1,299 @@
+{% extends 'base_passenger.html'%}
+{% block title%}
+{% endblock title%}
+{% block content%}
+    
+<h3 class="text-warning mb-5">ПЕРЕЧЕНЬ ОСНОВНЫХ ОПАСНЫХ ВЕЩЕСТВ И ПРЕДМЕТОВ, ЗАПРЕЩЕННЫХ (РАЗРЕШЕННЫХ С СОБЛЮДЕНИЕМ ТРЕБУЕМЫХ УСЛОВИЙ) К
+    ПЕРЕВОЗКЕ НА БОРТУ ВОЗДУШНОГО СУДНА ЧЛЕНАМИ ЭКИПАЖА И ПАССАЖИРАМИ В ЗАРЕГЕСТРИРОВАННОМ БАГАЖЕ И ВЕЩАХ, НАХОДЯЩИХСЯ ПРИ ПАССАЖИРАХ
+</h3>
+<h5 class="text-warning mb-5">Запрещено перевозить на борту воздушного судна членам экипажа и пассажирами в зарегистрированном багаже и в вещах, находящихся при пассажирах, следующие опасные вещества и предметы
+</h5>
+<div class="container">
+    <div class="row">
+        <h4 class="text-secondary">1. Взрывчатые вещества, средства взрывания и предметы, им начиненные
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+           <p class="text-secondary">• пороха всякие, в любой упаковке и в любом количестве;</p>
+           <p class="text-secondary">• патроны боевые (в том числе малокалиберные);</p>
+           <p class="text-secondary">• патроны к газовому оружию;</p>
+           <p class="text-secondary">• капсюли (пистоны) охотничьи;</p>
+           <p class="text-secondary">• пиротехнические средства: сигнальные и осветительные ракеты, патроны сигнальные, посадочные шашки, дымовые патроны (шашки), спички подрывника, бенгальские огни, петарды железнодорожные;</p>
+           <p class="text-secondary">• тротил, динамит, тол, аммонал и другие взрывчатые вещества;</p>
+           <p class="text-secondary">• капсюли-детонаторы, электродетонаторы, электровоспламенители, детонирующий и огнепроводный шнур и т.д.;</p>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">2. Сжатые и сжиженные газы
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample1">
+            <div class="card card-body">
+                <p class="text-secondary">• газы для бытового пользования (бутан-пропан) и другие газы;</p>
+                <p class="text-secondary">• газовые баллончики с наполнением нервно-паралитического и слезоточивого воздействия и т.д.;</p>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">3. Легковоспламеняющиеся жидкости
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body">
+                <p class="text-secondary">• ацетон;</p>
+                <p class="text-secondary">• бензин;</p>
+                <p class="text-secondary">• пробы легковоспламеняющихся нефтепродуктов;</p>
+                <p class="text-secondary">• метанол;</p>
+                <p class="text-secondary">• метилацетат (метиловый эфир);</p>
+                <p class="text-secondary">• сероуглерод;</p>
+                <p class="text-secondary">• эфиры;</p>
+                <p class="text-secondary">• этилцеллозола;</p>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">4. Воспламеняющиеся твердые вещества
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample3">
+            <div class="card card-body">
+                <p class="text-secondary">• вещества, подверженные самопроизвольному возгоранию;</p>
+                
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">5. Вещества, выделяющие легковоспламеняющиеся газы при взаимодействии с водой
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample4">
+            <div class="card card-body">
+                <p class="text-secondary">• калий, натрий, кальций металлический и их сплавы, кальций фосфористый и т.д.;</p>
+                <p class="text-secondary">• фосфор белый, желтый и красный и все другие вещества, относящиеся к категории воспламеняющихся твердых веществ;</p>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">6. Окисляющие вещества и органические перекиси
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample5">
+            <div class="card card-body">
+                <p class="text-secondary">• нитроцеллюлоза коллоидная, в гранулах или хлопьях, сухая или влажная, содержащая менее 25% воды или растворителя;</p>
+                <p class="text-secondary">• нитроцеллюлоза коллоидная, в кусках, влажная, содержащая менее 25% спирта;</p>
+                <p class="text-secondary">• нитроцеллюлоза сухая или влажная, содержащая менее 30% растворителя или 20% воды и т.д.;</p>
+               
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">7. Токсичные вещества
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample6">
+            <div class="card card-body">
+             <p class="text-secondary">-<p>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">8. Радиоактивные вещества
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample7">
+            <div class="card card-body">
+             <p class="text-secondary">-</p>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">9. Едкие и коррозирующие вещества
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample8">
+            <div class="card card-body">
+                <p class="text-secondary">• сильные неорганические кислоты: соляная, серная, азотная и другие;</p>
+                <p class="text-secondary">• фтористо-водородная (плавиковая) кислота и другие сильные кислоты и коррозирующие вещества;</p>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">10. Ядовитые и отравляющие вещества
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample9">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample9">
+            <div class="card card-body">
+                <p class="text-secondary">• любые ядовитые сильнодействующие и отравляющие вещества в жидком или твердом состоянии, упакованные в любую тару;</p>
+                <p class="text-secondary">• бруцин;</p>
+                <p class="text-secondary">• никотин;</p>
+                <p class="text-secondary">• стрихнин;</p>
+                <p class="text-secondary">• тетрагидрофурфуриловый спирт;</p>
+                <p class="text-secondary">• антифриз;</p>
+                <p class="text-secondary">• тормозная жидкость;</p>
+                <p class="text-secondary">• этиленгликоль;</p>
+                <p class="text-secondary">• ртуть за исключением ртути, содержащейся в термометре медицинском, тонометре ртутном в стандартном футляре, барометре ртутном или манометре ртутном, упакованных в герметичный контейнер и опечатанных пломбой отправителя;</p>
+                <p class="text-secondary">• все соли синильной кислоты и цианистые препараты;</p>
+                <p class="text-secondary">• циклон, цианплав, мышьяковистый ангидрид и т.д.;</p>
+                <p class="text-secondary">• другие опасные вещества, предметы и грузы, которые могут быть использованы в качестве орудия нападения на пассажиров, экипаж воздушного судна, а также создающие угрозу полета воздушного судна;</p>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">11. Оружие
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample10">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample10">
+            <div class="card card-body">
+                <p class="text-secondary">• Пистолеты, револьверы, винтовки, карабины и другое огнестрельное, газовое, пневматическое оружие, электрошоковые устройства, кортики, стилеты, десантные штык-ножи, за исключением случаев и в порядке, установленном законодательством Российской Федерации.</p>
+                <p class="text-secondary">• Подробный перечень опасных веществ и предметов, запрещенных к перевозке на борту воздушного судна членами экипажа и пассажирами, содержится в Технических инструкциях по безопасной перевозке опасных грузов по воздуху (Doc 9284 AN/905 ИКАО).</p>
+            </div>
+          </div>
+    </div>
+   
+    <h5 class="text-warning mb-5">Разрешено перевозить на борту воздушного судна членами экипажа и пассажирами с соблюдением требуемых условий следующие предметы и вещества
+    </h5>
+    <div class="row">
+        <h4 class="text-secondary">1. В зарегистрированном багаже в грузовых, багажных отсеках воздушного судна с изолированным доступом пассажиров к багажу во время полета
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample11" role="button" aria-expanded="false" aria-controls="collapseExample11">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample11">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample11">
+            <div class="card card-body">
+                <p class="text-secondary">• арбалеты, ружья для подводной охоты, шашки, сабли, тесаки, ятаганы, палаши, мечи, шпаги, штыки, кинжалы, ножи: охотничьи, ножи с выбрасывающимися клинками, с запирающими замками, имитаторы любого вида оружия;</p>
+                <p class="text-secondary">• хозяйственно-бытовые ножи (ножницы) с длиной клинка (лезвия) свыше 60 мм;</p>
+                <p class="text-secondary">• алкогольные напитки с содержанием более 24%, но не более 70% алкоголя по объему в емкостях вместимостью не более 5 л, в таре, предназначенной для розничной торговли, - не более 5 л на одного пассажира;
+
+                </p>
+                <p class="text-secondary">• жидкости и алкогольные напитки с содержанием алкоголя по объему не более 24%;</p>
+                <p class="text-secondary">• аэрозоли, предназначенные для использования в спортивных или бытовых целях, выпускные клапаны баллончиков которых защищены колпачками от самопроизвольного выпуска содержимого, в емкостях вместимостью не более 0,5 кг или 500 мл - не более 2 кг или 2 л на одного пассажира;</p>
+                <p class="text-secondary">• термометр медицинский, содержащий ртуть, в стандартном футляре - один на пассажира;</p>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">2. В вещах, находящихся при пассажирах
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample12" role="button" aria-expanded="false" aria-controls="collapseExample12">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample12">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample12">
+            <div class="card card-body">
+                <p class="text-secondary">• термометр медицинский, не содержащий ртуть;</p>
+                <p class="text-secondary">• тонометр ртутный в стандартном футляре - один на пассажира;</p>
+                <p class="text-secondary">• барометр или манометр ртутный, упакованный в герметичный контейнер и опечатанный пломбой отправителя;</p>
+                <p class="text-secondary">• одноразовые зажигалки - одна на пассажира;</p>
+                <p class="text-secondary">• сухой лед для охлаждения скоропортящихся продуктов - не более 2 кг на пассажира;</p>
+                <p class="text-secondary">• 3% перекись водорода - не более 100 мл на пассажира;</p>
+                <p class="text-secondary">• жидкости, гели и аэрозоли, относящиеся к неопасным:</p>
+                <p class="text-secondary">• в емкостях вместимостью не более 100 мл (или эквивалентной емкостью в других единицах измерения объема), упакованные в надежно закрывающийся прозрачный пластиковый пакет 
+                    объемом не более 1 л - один пакет на пассажира.</p>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">3. Жидкости в контейнерах емкостью более 100 мл к перевозке не принимаются даже в том случае, если емкость заполнена лишь частично, за исключением
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample13" role="button" aria-expanded="false" aria-controls="collapseExample13">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample13">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample13">
+            <div class="card card-body">
+                <p class="text-secondary">• лекарственных препаратов, специальных диетических продуктов, детского питания, в том числе материнского молока, в количестве, необходимом на время полета;</p>
+                <p class="text-secondary">• лекарственных препаратов, содержащих наркотические средства, психотропные вещества и их прекурсоры, при наличии документов, предусмотренных международными договорами Российской Федерации, в том числе актами, составляющими право Евразийского экономического союза, и (или) законодательством Российской Федерации, подтверждающих назначение пассажиру указанных лекарственных препаратов с указанием их наименования и количества, в количестве, необходимом на время полета;</p>
+                <p class="text-secondary">• биологических материалов при наличии у пассажира документов, предусмотренных международными договорами Российской Федерации, в том числе актами, составляющими право Евразийского экономического союза, и (или) законодательством Российской Федерации, устанавливающими порядок перевозки биологических материалов.</p>
+                <p class="text-secondary">• Жидкости, приобретенные в магазинах беспошлинной торговли в аэропорту или на борту воздушного судна, должны быть упакованы в надежно запечатанный (опломбированный) пластиковый пакет, обеспечивающий идентификацию доступа к содержимому пакета в течение полета, на котором имеется достоверное подтверждение того, что эта покупка произведена в аэропортовых магазинах беспошлинной торговли или на борту воздушного судна в день (дни) поездки.</p>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">4. Администрация аэропорта, авиапредприятия, эксплуатанта вправе принимать решение о введении дополнительных мер по обеспечению авиационной безопасности на рейсах с повышенной опасностью, вследствие чего запрещать перевозку в салоне воздушного судна следующих предметов
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample14" role="button" aria-expanded="false" aria-controls="collapseExample14">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample14" aria-expanded="false" aria-controls="collapseExample14">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample14">
+            <div class="card card-body">
+                <p class="text-secondary">• штопоры;</p>
+                <p class="text-secondary">• иглы для подкожных инъекций (если не будет представлено медицинское обоснование);</p>
+                <p class="text-secondary">• вязальные спицы;</p>
+                <p class="text-secondary">• ножницы с длиной лезвия менее 60 мм;</p>
+                <p class="text-secondary">• складные (без фиксатора) дорожные, перочинные ножи с длиной лезвия менее 60 мм;</p>
+                <p class="text-secondary">• тонометры ртутные;
+                </p>
+                <p class="text-secondary">• барометры или манометры ртутные.</p>
+                
+            </div>
+          </div>
+    </div>
+</div>
+{%endblock content%}

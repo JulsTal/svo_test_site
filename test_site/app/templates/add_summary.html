@@ -1,0 +1,56 @@
+{% extends "base_passenger.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+<h3 class="text-warning mb-5">Введите Ваши данные</h3>
+
+<form action="" method="POST" novalidate>
+<div class="container mt-3">
+  {{form.csrf_token}}
+    <div class="row form-control style_form_summary_row">
+        <div class="col-xs-1" align="start">
+        <h5 class="text-secondary warning">Фамилия</h5>
+        {{form.lastname}}
+        <h5 class="text-secondary">Имя</h5>
+        {{form.name}}
+        <h5 class="text-secondary">Отчество</h5>
+        {{form.second_name}}
+        <h5 class="text-secondary">Номер телефона</h5>
+        {{form.phone_number}}
+        <h5 class="text-secondary mt-3">Уровень образования</h5>
+        {{form.education}}
+        <h5 class="text-secondary mt-3">Я подтверждаю</h5>
+        <p class="text-secondary">Имею гражданство РФ  {{form.have_Russian_pasport}}</p>
+        <p class="text-secondary">Отсутствие судимости и административного наказания за употребление наркотиков: {{form.dont_use_drugs}}</p>
+        <p class="text-secondary">Даю согласие на обработку персональных данных:  {{form.accept_prov}}</p>
+        <h5 class="text-secondary">Введите код с картинки:</h5>
+        <div class="captcha-container">
+                {{ captcha_html(captcha)|safe }}
+                
+            </div>
+            <div class="col-xs-1 pb-3" align="center">
+                {{form.submit( class="btn btn-warning1 btn-lg" )}}
+            </div>
+            
+        </div>
+    </div>
+ 
+</form>
+<div class="container mt-5">
+  <div class="row">
+    <p class="text-warning"><strong>Если Вам интересна наша вакансия, Ждем Вас с понедельника по пятницу по адресу:</strong></p>
+    <p class="text-secondary" align="center">Московская область, г. Химки, Шереметьевское шоссе, вл.6К, офис "Шереметьево Москва Карго", 4 этаж, кабинет 424.</p>
+    <p class="text-secondary" align="center"><a href="{{url_for('contacts')}}"class="text-warning">Схема проезда</a></p>
+    <hr>
+    <p class="text-secondary" align="center"><strong>При себе иметь:</strong></p>
+    <p class="text-secondary" align="center">Паспорт, ИНН, СНИЛС, военный билет, документы об образовании, трудовую книжку или ее копию.</p>
+    <hr>
+    <p class="text-secondary" align="center">Телефон подбора по персоналу</p>
+    <p class="text-secondary" align="center">8-925-633-31-15</p>
+    <p class="text-secondary"align="center">8-925-344-79-02</p>
+    <p class="text-secondary" align="center">8-495-755-68-07</p>
+  </div>
+</div>
+
+
+{% endblock content%}

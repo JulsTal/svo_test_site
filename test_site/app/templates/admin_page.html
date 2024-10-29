@@ -1,0 +1,35 @@
+{% extends "adm_base.html" %}
+{% block title%}
+Настрйки и администрирование сайта
+{%endblock title%}
+{%block content%}
+<h2 class="text-warning mt-3 mb-3" align="center">Панель администратора</h2>
+<p class="col-xs-1 text-secondary"><a href="{{url_for('logout')}}" class="text-secondary text-decoration-none" align="center">Заврешить сессию</a></p>
+<hr>
+<div class="container">
+    <h5 class="text-secondary mt-3 mb-3" align="center">Функционал</h5>
+    <div class="row">
+        <p class="col-md-4 text-warning "><a href="{{url_for('add_card')}}" class="text-warning text-decoration-none">Создать карточку раздела</a></p>
+        <p class="col-md-4 text-warning"><a href="{{url_for('add_news')}}" class="text-warning text-decoration-none">Опубликовать новость</a></p>
+        <p class="col-md-4 text-warning"><a href="{{url_for('register')}}" class="text-warning text-decoration-none">Добавить нового админстратора</a></p>
+        
+    </div>
+    <h5 class="text-secondary mt-3 mb-3" align="center">Статистика</h5>
+
+  <div class="row">
+    <p class="col-md-4 text-warning" >Статистика посещяемости сайта</p>
+    <p class="col-md-4 text-warning ">Сатистика откликов на вакансию</p>
+    <p class="col-md-4 text-warning">Статистика обращений</p>
+
+  </div>
+  <h5 class="text-secondary mt-3 mb-3" align="center">Сетевые параметры и настройки сети</h5>
+  <div class="row">
+    <p class="col-md-4 text-warning" >Кол-во пользователей на сайте</p>
+    <p class="col-md-4 text-warning ">Скорость подключения</p>
+    <p class="col-md-4 text-warning">Домен</p>
+  </div>
+
+ 
+</div>
+<hr>
+{%endblock content%}

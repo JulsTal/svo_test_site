@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <div class="col-md-4">
+        <button class="btn mt-2  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <img class="btn_s_m" src={{url_for('static', filename='images/strelka_menu.png')}}>
+        </button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <img src={{url_for('static', filename='images/logo_for_contacts.jpg')}} class="img-fluid">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+          </div>
+          <div class="offcanvas-body">
+        <h1 class="display-5 " id="offcanvasWithBothOptionsLabel">Меню</h1>
+           <ul class="list group pt-3">
+            <li class="list-group-item"><a class="list-group-item" href="{{url_for('sertificates_and_linc')}}">Лицензии и сертификаты</a></li>
+            <li class="list-group-item"><a class="list-group-item" href="{{url_for('news')}}">Новости</a></li>
+            <li class="list-group-item"><a class="list-group-item" href='{{url_for('personal_organization')}}'>Персонал предприятия</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="{{url_for('position_on_market')}}">Позиции на рынке</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="{{ url_for('inter_managment_system') }}">Интегрированная система менеджмента АО "Шереметьево Безопасность"</a></li>
+            <li class="list-group-item"><a  class="list-group-item" href="{{ url_for('info_about_sells_and_trafics') }}">Информация о тарифах и ценах на услуги по обеспечению авиационной и неавиационной безопасности</a></li>
+        </ul>
+        <p class="sidebar_p">Не смогли найти нужную информацию? Задайте вопрос специалисту<a class="text-warning" href="{{url_for('type_appeal')}}"> через сайт >></a></p>
+        
+          </div>
+        </div>
+    </div>
+  </html>

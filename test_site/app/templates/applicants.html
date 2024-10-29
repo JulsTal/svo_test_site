@@ -1,0 +1,125 @@
+{% extends "base2.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+<h4 class="text-warning">ТЕКУЩИЕ ВАКАНСИИ</h4>
+<h5 class="text-warning">Инспектор по досмотру пассажиров и персонала</h5>
+
+<div class="container">
+    <div class="row">
+        <div class="container btn position-relative ">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner mb-4 w-100  ">
+                <div class="carousel-item active">
+                  <div class="carousel-caption">
+                    <h3>Стабильная зарплата</h3>
+                  </div>
+                  <img src={{url_for('static', filename='/images/woman_s1.jpg')}} class="d-block " alt="...">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img src={{url_for('static', filename='/images/woman_s2.jpg')}} class="d-block " alt="...">
+                  <div class="carousel-caption mb-50">
+                    <h3>Социальный пакет</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src={{url_for('static', filename='/images/woman_s3.jpg')}} class="d-block " alt="...">
+                  <div class="carousel-caption">
+                    <h3>Активная корпоративная жизнь</h3>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"><</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">></span>
+              </button>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Подробнее о вакансии
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample">
+           
+            <div class="card card-body">
+              <p class="text-secondary">✓ Предполетный досмотр посетителей аэровокзальных комплексов аэропорта Шереметьево, пассажиров, членов экипажей, а также вещей и багажа, находящихся при них;</p>
+              <p class="text-secondary">✓ Проведение досмотра с помощью технических средств досмотра и ручным контактным методом;</p>
+              <p class="text-secondary">✓ Контроль соблюдения посетителями, пассажирами и работниками аэропорта требований авиационной и транспортной безопасности;</p>
+              <p class="text-secondary">✓ Выявление запрещенных к перевозке предметов и вещей у пассажиров, посетителей, членов экипажей.<p>
+          </div>
+          </div>
+    </div>
+
+    <div class="row">
+      
+        <h4 class="text-secondary">Требования
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample1">
+            <div class="card card-body">
+              <p class="text-secondary">✓ Гражданство РФ (согласно ВЗК РФ Статья 52. Понятие авиационного персонала);</p>
+              <p class="text-secondary">✓ Отсутствие непогашенной или неснятой судимости (согласно ВЗК РФ Статья 52. Понятие авиационного персонала);</p>
+              <p class="text-secondary">✓ Образование не ниже среднего профессионального;</p>
+              <p class="text-secondary">✓ Стрессоустойчивость, внимательность, исполнительность, дисциплинированность;</p>
+            </div>
+           
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Условия работы и социальный пакет
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body">
+            <p class="text-secondary">✓ Трудоустройство согласно ТК РФ с первого дня;</p>
+            <p class="text-secondary">✓ Гарантированный доход без задержек + премиальное вознаграждение;</p>
+            <p class="text-secondary">✓ Стабильная заработная плата от 54 000 рублей после вычета НДФЛ;</p>
+            <p class="text-secondary">✓ Обучение за счет работодателя (2 месяца), на период обучения выплачивается заработная плата;</p>
+            <p class="text-secondary">✓ Оплачиваемый отпуск (28 календарных дней);</p>
+            <p class="text-secondary">✓ Добровольное медицинское страхование (собственная медсанчасть);</p>
+            <p class="text-secondary">✓ Наличие корпоративного транспорта (подробную информацию уточняйте во время собеседования);</p>
+            <p class="text-secondary">✓ Предоставляется форменная одежда и обувь;</p>
+            <p class="text-secondary">✓ Обучение в собственном учебном центре АО “Шереметьево Безопасность”;</p>
+            <p class="text-secondary">✓ Сменный график работы «День/Ночь»: дневная смена с 08:00 до 20:00, ночная смена с 20:00 до 08:00, отсыпной/выходной;</p>
+            <p class="text-secondary">✓ Компенсация оплаты детского сада ;</p>
+            <p class="text-secondary">✓ Новогодние подарки детям и билеты на новогодние мероприятия;</p>
+            <p class="text-secondary">✓ Материальная помощь и социальная поддержка;</p>
+            <p class="text-secondary">✓ Активная корпоративная жизнь (спортивные мероприятия, конкурсы профессионального мастерства и другое);</p>
+            <p class="text-secondary">✓ Место работы: Международный Аэропорт Шереметьево.</p>
+            </div>
+          </div>
+    </div>
+    <div class="row mt-3 mb-3">
+      <div class="col-xs-1" align="center">
+        <a type="button" class="btn  zayavka btn-chevron-left rounded-pill fade-out" href={{url_for('add_summary')}}>Подать заявление</a>
+      </div>
+    </div>
+    </div>
+</div>
+    {% endblock content%}

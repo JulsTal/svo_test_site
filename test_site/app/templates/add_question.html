@@ -1,0 +1,36 @@
+{% extends "base_passenger.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+<h3 class="text-warning mb-5">Введите Ваши данные</h3>
+
+<form action="" method="POST" novalidate>
+  {{ form.csrf_token }}
+    <div class="container mt-3">
+        <div class="row form-control style_form_summary_row">
+            <div class="col-xs-1" align="start">
+            <h5 class="text-secondary warning">Ф.И.О</h5>
+            {{form.fio}}
+            <h5 class="text-secondary">Email</h5>
+            {{form.email_visitor}}
+            <h5 class="text-secondary">Текст вопроса</h5>
+            {{form.text_letter}}
+           
+           <h5 class="text-secondary">Введите код с картинки:</h5>
+            
+                {{ captcha_html(captcha)|safe }}
+            
+            </div>
+            <div class="col-xs-1 pb-3" align="center">
+                {{form.submit( class="btn btn-warning1" )}}
+            </div>
+            
+        </div>
+    </div>
+    
+</form>
+<p class="text-secondary">*срок рассмотрения обращения не более 30 календарных дней
+</p>
+
+
+{% endblock content%}

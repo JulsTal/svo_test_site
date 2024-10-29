@@ -1,0 +1,14 @@
+{% extends "base_passenger.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+<h2 class="text-warning mb-5">Страница не найдена</h2>
+<hr>
+<h4 class="text-warning mb-5">Ошибка 404!</h4>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-1" align="center"><img src="{{url_for('static', filename='images/error_404.png')}}" class="img-fluid"></div>
+    </div>
+</div>
+
+{% endblock content%}

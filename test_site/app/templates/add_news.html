@@ -1,0 +1,27 @@
+{% extends "adm_base.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+<h3 class="text-warning mb-5">Введите данные новости</h3>
+<hr>
+<form action="" method="POST" novalidate>
+    <div class="container mt-3 mb-5">
+        {{ form.csrf_token }}
+        <div class="row form-control style_form_summary_row">
+            <div class="col-xs-1" align="start">
+            <h5 class="text-secondary warning">Наименование новости</h5>
+            {{form.name_news}}
+            <h5 class="text-secondary warning">URL адрес новости</h5>
+            {{form.url}}
+            <h5 class="text-secondary">Текст</h5>
+            {{form.text_news}}
+          
+            </div>
+
+            <div class="col-xs-1 pb-3" align="center">
+                {{form.submit(class="btn btn-warning1 btn-lg")}}
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock content%}

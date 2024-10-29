@@ -1,0 +1,1087 @@
+{% extends "base_passenger.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+<h3 class="text-warning mb-5">Часто задаваемые вопросы (по категориям)</h3>
+<div class="container">
+            <div class="row">
+                <h4 class="text-secondary">Провоз рыболовецкого и спортивного инвентаря
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+                    </button>
+                </h4>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <div class="list-group w-100">
+                            <a href="#shortExampleAnswer1collapse"  data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer1collapse" data-mdb-collapse-init aria-expanded="false"
+                              aria-controls="shortExampleAnswer1collapse" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">В правилах перевозки ручной клади не нашел упоминания о возможности перевозки инвентаря рыболова. Можно ли перевозить рыболовные блесны и спининги в упаковке? Спасибо.</h5>
+                              </div>
+                              <hr>
+                              <p class="mb-1 text-secondary">
+                                Информируем Вас о том, что перевозка воздушным транспортом рыболовной снасти и спиннингов может быть разрешена в вещах, находящихся при пассажире, с соблюдением определённых условий перевозки...
+                              </p>
+                              <small class="text-muted text-warning"><u>Подробнее...</u></small>
+                              <!-- Collapsed content -->
+                              <div class="collapse mt-3" id="shortExampleAnswer1collapse">
+                                <p class="text-secondary">Информируем Вас о том, что перевозка воздушным транспортом рыболовной снасти и спиннингов может быть разрешена в вещах, находящихся при пассажире, с соблюдением определённых условий перевозки:</p>
+                                      <p class="text-secondary">1. Длина крючков не должна превышать 60 мм;</p>
+                                      <p class="text-secondary">2. Длина удилища должна быть не более длины, определённой правилами авиаперевозчика, если иное не противоречит правилам, установленным авиаперевозчиком.</p>
+                                      <p class="text-secondary">В соответствии с Приложением 1 к Правилам проведения предполётного и послеполётного досмотров (п. п. 26, 71), утверждённых Приказом Минтранса России от 25.07.2007 № 104 «Об утверждении Правил проведения предполетного и послеполетного досмотров»: «Администрация аэропорта, авиапредприятия, эксплуатанта вправе принимать решение о введении дополнительных мер по обеспечению авиационной безопасности на рейсах с повышенной опасностью, вследствие чего запрещать перевозку в салоне воздушного судна следующих предметов:</p>
+                                      <p class="text-secondary">штопоры;</p>
+                                      <p class="text-secondary">иглы для подкожных инъекций (если не будет представлено медицинское обоснование);</p>
+                                      <p class="text-secondary">вязальные спицы;</p>
+                                      <p class="text-secondary">ножницы с длиной лезвия менее 60 мм;</p>
+                                      <p class="text-secondary">складные (без фиксатора) дорожные, перочинные ножи с длиной лезвия менее 60 мм.»</p>
+                                      <p class="text-secondary">Правила перевозки багажа и вещей, находящихся при Вас, следует уточнить у авиакомпании перевозчика. Например, у авиакомпании «Аэрофлот – Российские авиалинии» нормы провоза багажа в салоне воздушного судна:</p>
+                                      <p class="text-secondary">Бизнес класс — 1 место багажа весом до 15 кг (в сумме трех измерений не более 115 см);</p>
+                                      <p class="text-secondary">Комфорт и Экономический класс — 1 место багажа весом до 10 кг (в сумме трех измерений не более 115 см).</p>
+                                      <p class="text-secondary">В сумме трех измерений размер не должен превышать 115 см (55×40×20).</p>
+                                      <p class="text-secondary">Сверх установленной нормы дополнительно к разрешенному багажу «В кабину» можно взять с собой следующие предметы:</p>
+                                      <p class="text-secondary">-дамскую сумочку/мужской портфель</p>
+                                      <p class="text-secondary">-папку для бумаг</p>
+                                      <p class="text-secondary">-зонтик</p>
+                                      <p class="text-secondary">-трость</p>
+                                      <p class="text-secondary">-букет цветов</p>
+                                      <p class="text-secondary">-верхнюю одежду</p>
+                                      <p class="text-secondary">-портативный компьютер, фотоаппарат, видеокамеру</p>
+                                      <p class="text-secondary">-печатные издания для чтения в полете</p>
+                                      <p class="text-secondary">-детское питание для ребенка во время полета</p>
+                                      <p class="text-secondary">-детскую люльку при перевозе ребенка</p>
+                                      <p class="text-secondary">-костюм в портпледе</p>
+                                      <p class="text-secondary">-телефон сотовой связи</p>
+                                      <p class="text-secondary">-костыли</p>
+                                      <p class="text-secondary">-сумку с покупками из магазина «Duty Free».</p>
+                                      <hr>
+                                      <div class="row">
+                                        <div class="col-xs-1"align="center" >
+                                            <p class="text-secondary"><strong>
+Лыжное оборудование, хоккейное оборудование, велосипеды, оборудование для гольфа, рыболовное оборудование расценивается как 1 место и входит в норму бесплатного провоза багажа следующее оборудование:</strong><p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6" >
+                                            <p class="text-secondary"><strong>Лыжное оборудование</strong><p>
+                                        </div>
+                                        <div class="col-md-6" >
+                                            <p class="text-secondary">	
+                                                	
+чехол с 1 парой лыж и 1 парой палок + 1 место багажа с 1 парой ботинок
+
+1 чехол с 1 парой водных лыж<p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-6" >
+                                          <p class="text-secondary"><strong>Сноубордическое оборудование</strong><p>
+                                      </div>
+                                      <div class="col-md-6" >
+                                          <p class="text-secondary">	
+                                            1 чехол с 1 сноубордом + 1 место багажа с 1 парой ботинок<p>
+                                      </div>
+                                    </div>
+                                  <div class="row">
+                                    <div class="col-md-6" >
+                                        <p class="text-secondary"><strong>Хоккейное оборудование</strong><p>
+                                    </div>
+                                    <div class="col-md-6" >
+                                        <p class="text-secondary">	
+                                          чехол с экипировкой + чехол с 2 клюшками<p>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6" >
+                                        <p class="text-secondary"><strong>Велосипед</strong><p>
+                                    </div>
+                                    <div class="col-md-6" >
+                                        <p class="text-secondary">Велосипед, подготовленный к транспортировке<p>
+                                    </div>
+                                  </div>
+                                    <div class="row">
+                                      <div class="col-md-6" >
+                                          <p class="text-secondary"><strong>Оборудование для гольфа</strong><p>
+                                      </div>
+                                      <div class="col-md-6" >
+                                          <p class="text-secondary">	
+                                            оборудование для гольфа, упакованное в один чехол	
+                                              <p>
+                                      </div>
+
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6" >
+                                        <p class="text-secondary"><strong>Рыболовное оборудование (упакованное в 1 контейнер или чехол)</strong><p>
+                                    </div>
+                                    <div class="col-md-6" >
+                                        <p class="text-secondary">	
+                                          2 удочки<p>
+                                            <p class="text-secondary">	
+                                              1 комплект снастей<p>
+                                    </div>
+                                </div>
+                                  <hr>
+                                      <p class="text-secondary">В соответствии с правилами, указанными на официальном сайте ОАО «Аэрофлот – Российские авиалинии», прямая ссылка , рыболовное оборудование относиться к категории «Нестандартный багаж»:</p>
+                                      <p class="text-secondary">«Перевозка всех видов сверхнормативного и/или нестандартного багажа осуществляется по предварительному согласованию с перевозчиком при бронировании и покупке авиабилета. Данные правила действительны для рейсов, оператором которых является Аэрофлот, а также для  для кодшеринговых рейсов Аэрофлота, выполняемых авиакомпаниями "Донавиа",  "Оренбургские авиалинии", "Аврора", "Россия"  (см. раздел "Кодшеринговые рейсы")».</p>
+                                      <p class="text-secondary">Соответствующая ставка оплаты багажа сверх нормы по количеству и весу будет применяться, если сумма мест багажа пассажира превысит указанное в билете количество мест бесплатного провоза багажа.  Также дополнительная оплата потребуется в случае превышения веса оборудования установленных норм одного места багажа.</p>
+                                      <p class="text-secondary">С учётом перечисленных норм, правил и процедур по авиационной безопасности, рекомендуем Вам перевозить рыболовные блесны и спиннинги в зарегистрированном багаже.</p>
+                              </div>
+                            </a>
+                            <a href="#shortExampleAnswer2collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer2collapse" data-mdb-collapse-init aria-expanded="false"
+                              aria-controls="shortExampleAnswer2collapse" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Подскажите, пожалуйста, можно ли в багаже провозить альпинистский ледоруб. Я лечу из Шереметьево Аэрофлотом в Барнаул.</h5>
+                              </div>
+                              <hr>
+                              <p class="mb-1 text-secondary">
+                                Да, при соблюдении определенных условий...
+                              </p>
+                              <small class="text-muted text-warning"><u>Подробнее...</u></small>
+                              <!-- Collapsed content -->
+                              <div class="collapse mt-3" id="shortExampleAnswer2collapse">
+                             <p class="text-secondary">Информируем Вас о том, что в соответствии с Правилами проведения предполетного и послеполетного досмотров, утверждённых приказом Минтранса России от 25.07.2007 г. №104, ледорубы разрешено перевозить на борту воздушного судна, с соблюдением требуемых условий: - в зарегистрированном багаже в грузовых, багажных отсеках воздушного судна с изолированным доступом пассажиров к багажу во время полета.
+                            </p>
+                             <p class="text-secondary">Желаем Вам приятного полёта!</p>
+                              </div>
+                            </a>
+                            <a href="#shortExampleAnswer3collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer3collapse"
+                              aria-controls="shortExampleAnswer3collapse" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Можно ли провозить в ручной клади при перелетах внутри Российской Федерации спортивную фехтовальную шпагу? Есть к этому какие-то требования? Нужны какие-то документы?</h5>
+                              </div>
+                              <hr>
+                              <p class="mb-1 text-secondary">
+                                Да, только в зарегестрированном багаже...
+                              </p>
+                              <small class="text-muted text-warning"><u>Подробнее</u></small>
+                              <!-- Collapsed content -->
+                              <div class="collapse mt-3" id="shortExampleAnswer3collapse">
+                                <p class="text-secondary">Информируем Вас, что в соответствии с Приложением №1 Правил проведения предполетного и послеполетного досмотров, утвержденных приказом Минтранса РФ от 25 июля 2007 г. №104, спортивную фехтовальную шпагу разрешено провозить только в зарегистрированном багаже. Никаких документов для перевозки не требуется.</p>
+                               
+                              </div>
+                            </a>
+                            <a href="#shortExampleAnswer4collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer4collapse"
+                            aria-controls="shortExampleAnswer4collapse" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Можно ли осуществить перевозку в ручной клади спасательного противолавинного рюкзака типа SnowPuls включая картридж со сжатым воздухом на рейсе Аэрофлота Москва-Мюнхен? Картридж будет отсоединен от системы и закрыт защитным колпачком.</h5>
+                            </div>
+                            <hr>
+                            <small class="text-muted text-warning"><u>Подробнее</u></small>
+                            <!-- Collapsed content -->
+                            <div class="collapse mt-3" id="shortExampleAnswer4collapse">
+                              <p class="text-secondary">Информируем Вас о том, что картридж со сжатым воздухом от системы спасательного противолавинного рюкзака с закрытым защитным колпачком, в количестве не более 2 шт. на человека, Вы можете перевезти только в зарегистрированном багаже.</p>
+                            
+                            </div>
+                          </a>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <h4 class="text-secondary">Провоз продуктов питания и детского питания
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                      <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                        <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+                    </button>
+                </h4>
+                  <div class="collapse" id="collapseExample1">
+                    <div class="card card-body">
+                      <div class="list-group w-100">
+                      <a href="#shortExampleAnswer5collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer5collapse" data-mdb-collapse-init aria-expanded="false"
+                      aria-controls="shortExampleAnswer5collapse" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Подскажите, летим с ребенком в Симфереполь,ребенку 11 месяцев, могу ли я с собой на борт взять бутылочки с компотом, детским питанием (молоко), а так же наложить в прозрачные баночки пюре из овощей и кашу. А так же можно ли взять детский творог или кефир?</h5>
+                      </div>
+                      <hr>
+                      <p class="mb-1 text-secondary">
+                     
+                      </p>
+                      <small class="text-muted text-warning"><u>Подробнее</u></small>
+                      <!-- Collapsed content -->
+                      <div class="collapse mt-3" id="shortExampleAnswer5collapse">
+                        <p class="text-secondary">Праранса России от 25.07.2007 г. №104 (ред. от 16.04.2012), разрешено перевозить на борту воздушного судна детское питание, в том числе материнское молоко, в количестве, необходимом на время полета.</p>
+                      </div>
+                   
+                    </a>
+<a href="#shortExampleAnswer6collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer6collapse"
+                      aria-controls="shortExampleAnswer6collapse" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Прошу уточнить информацию по перевозке груза. Планируем переправить 20 кг творога из Москвы в Дюссельдорф. Есть ли ограничения по перевозке данного вида сырья?</h5>
+                      </div>
+                      <hr>
+                      <p class="mb-1 text-secondary">
+                     
+                      </p>
+                      <small class="text-muted text-warning"><u>Подробнее</u></small>
+                      <!-- Collapsed content -->
+                      <div class="collapse mt-3" id="shortExampleAnswer6collapse">
+                        <p class="text-secondary">Информируем Вас, что ограничения по перевозке данного вида сырья в зарегистрированном багаже с точки зрения авиационной безопасности отсутствуют. Считаем полезным добавить, что вес одного места багажа для бесплатного провоза не должен превышать 23 кг. Учитывая скоропортящийся характер продукта, рекомендуем творог предварительно как следует охладить.</p>
+                      </div>
+                    </a>
+<a href="#shortExampleAnswer7collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer7collapse" data-mdb-collapse-init aria-expanded="false"
+                    aria-controls="shortExampleAnswer7collapse" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Собираюсь взять с собой в багаже 400 грамм сывороточного протеина (спортивное питание) в контейнере для еды (т.е. без заводской упаковки). Могут ли у меня возникнуть проблема из-за того, что нет заводской упаковки?</h5>
+                    </div>
+                    <hr>
+                    <p class="mb-1 text-secondary">
+                   
+                    </p>
+                    <small class="text-muted text-warning"><u>Подробнее</u></small>
+                    <!-- Collapsed content -->
+                    <div class="collapse mt-3" id="shortExampleAnswer7collapse">
+                      <p class="text-secondary">К провозу спортивного питания в зарегистрированном багаже ограничений нет, однако в Вашем случае, ввиду отсутствия заводской упаковки, протеиновый порошок будет классифицирован как неизвестное сыпучее вещество и дополнительно проверен специалистами, вероятнее всего, в Вашем присутствии. Никаких дополнительных действий предпринимать не нужно.</p>
+                    </div>
+                  </a>
+<a href="#shortExampleAnswer8collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer8collapse"
+                    aria-controls="shortExampleAnswer8collapse" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Лечу на свадьбу дочери. Могу ли я перевести свадебный торт? Габариты соответствуют требованиям.</h5>
+                    </div>
+                    <hr>
+                    <p class="mb-1 text-secondary">
+                     
+                    </p>
+                    <small class="text-muted text-warning"><u>Подробнее...</u></small>
+                    <!-- Collapsed content -->
+                    <div class="collapse mt-3" id="shortExampleAnswer8collapse">
+                   <p class="text-secondary">Информируем Вас о том, что перевозка воздушным транспортом свадебных тортов по вопросам авиационной безопасности, действующих на территории Российской Федерации, не запрещена, при условии соблюдения основных требований авиакомпании к вещам, которые Вы планируется взять с собой в салон самолёта.</p>
+                   <p class="text-secondary">При прохождении входного и предполётного досмотров Вам необходимо быть готовым к досмотру свадебного торта при помощи технических средств досмотра – рентгенотелевизионного интроскопа и при необходимости дополнительных средств досмотра.</p>
+                  
+                    </div>
+                  </a>
+<a href="#shortExampleAnswer9collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer9collapse" data-mdb-collapse-init aria-expanded="false"
+                  aria-controls="shortExampleAnswer9collapse" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Разрешено ли перевозить в ручной клади соленые грибы в стеклянных банках?</h5>
+                  </div>
+                  <hr>
+                  <p class="mb-1 text-secondary">
+                 
+                  </p>
+                  <small class="text-muted text-warning"><u>Подробнее</u></small>
+                  <!-- Collapsed content -->
+                  <div class="collapse mt-3" id="shortExampleAnswer9collapse">
+                    <p class="text-secondary">В соответствии с нормативными правовыми документами по авиационной безопасности, действующими на территории Российской Федерации, солёные грибы относятся к категории жидкости, аэрозоли, гели. Разрешено перевозить на борту воздушного судна жидкости, аэрозоли и гели, относящиеся к неопасным, в емкостях вместимостью не более 100 мл (или эквивалентной емкостью в других единицах измерения объема), упакованные в надежно закрывающийся прозрачный пластиковый пакет объемом не более 1 л - один пакет на пассажира.</p>
+                    <p class="text-secondary">Жидкости в контейнерах емкостью более 100 мл к перевозке не принимаются даже в том случае, если емкость заполнена лишь частично.</p>
+                    <p class="text-secondary">Исключение по перевозке имеют лекарства, специальные диетические потребности, детское питание, в том числе материнское молоко, в количестве, необходимом на время полета.</p>
+                    <p class="text-secondary">В связи с вышеизложенными правилами рекомендуем Вам перевозить солёные грибы, упакованные в ёмкости объёмом более 100 мл, в зарегистрированном багаже.</p>
+                  </div>
+                </a>
+<a href="#shortExampleAnswer10collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer10collapse"
+                  aria-controls="shortExampleAnswer10collapse" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Можно ли внутренним рейсом перевезти в ручной клади 2 ананаса по 300 г и копченую колбасу в упаковке? Или необходимо сдавать в багаж?</h5>
+                  </div>
+                  <hr>
+                  <p class="mb-1 text-secondary">
+                   
+                  </p>
+                  <small class="text-muted text-warning"><u>Подробнее...</u></small>
+                  <!-- Collapsed content -->
+                  <div class="collapse mt-3" id="shortExampleAnswer10collapse">
+                 <p class="text-secondary">Перевозка воздушным транспортом двух ананасов и копчёной колбасы по вопросам авиационной безопасности, действующих на территории Российской Федерации, не запрещена, при условии соблюдения основных требований авиакомпании к вещам, которые Вы планируется взять с собой в салон самолёта.</p>
+                  </div>
+                </a>
+<a href="#shortExampleAnswer11collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer11collapse" data-mdb-collapse-init aria-expanded="false"
+                aria-controls="shortExampleAnswer11collapse" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Сколько коробок шоколадных конфет по 240 г я могу вывезти из России в багаже в качестве подарков?</h5>
+                </div>
+                <hr>
+                <p class="mb-1 text-secondary">
+               
+                </p>
+                <small class="text-muted text-warning"><u>Подробнее</u></small>
+                <!-- Collapsed content -->
+                <div class="collapse mt-3" id="shortExampleAnswer11collapse">
+                  <p class="text-secondary">Информируем Вас о том, что Ваш вопрос не относится к компетенции транспортной и авиационной безопасности.</p>
+                  <p class="text-secondary">О нормах и правилах перевозки багажа Вам необходимо получить информацию у Вашего перевозчика. Например, если Вы летите авиакомпанией ПАО «Аэрофлот – Российские авиалинии», рекомендуем Вам обратиться на сайт авиакомпании, либо перейти по прямой ссылке http://www.aeroflot.ru/cms/before_and_after_fly/luggage. </p>
+                  <p class="text-secondary">При планировании перелёта за пределы Российской Федерации, по вопросу перевозки шоколадных конфет, рекомендуем Вам обратиться в таможенную службу пройдя по прямой ссылке http://svo.aero/customs/.</p>
+                </div>
+              </a>
+            </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <h4 class="text-secondary">Провоз оружия и пиротехники
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                      <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                        <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+                    </button>
+                </h4>
+                  <div class="collapse" id="collapseExample2">
+                    <div class="card card-body">
+                      <div class="list-group w-100">
+                      <a href="#shortExampleAnswer12collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer12collapse"
+                      aria-controls="shortExampleAnswer12collapse" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Какое оружие запрещено провозить в самолете?</h5>
+                      </div>
+                      <hr>
+                      <p class="mb-1 text-secondary">
+                     
+                      </p>
+                      <small class="text-muted text-warning"><u>Подробнее</u></small>
+                      <!-- Collapsed content -->
+                      <div class="collapse mt-3" id="shortExampleAnswer12collapse">
+                        <p class="text-secondary">В самолете запрещается провозить огнестрельное, холодное, сигнальное, пневматическое и газовое оружие, равно как и любые электрошоковые устройства. Сюда входят: арбалеты, шашки,тесаки, палаши, сабли, мечи, шпаги, ятаганы, кинжалы, штыки, охотничьи ножи, а также оружие для подводной охоты и всевозможные имитаторы оружия, за исключением случаев и в порядке установленном законодательством Российской Федерации:</p>
+                        <p class="text-secondary">Допускается провоз оружия в зарегистрированном багаже в грузовых, багажных отсеках воздушного судна с изолированным доступом пассажиров к багажу во время полета при предъявлении всех необходимые документы на него.
+                          Запрещены к провозу на воздушных судах патроны к газовому оружию и газовые баллончики, имеющие наполнение нервно-паралитического и слезоточивого воздействия.</p>
+                      </div>
+                    </a>
+<a href="#shortExampleAnswer13collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer13collapse"
+                    aria-controls="shortExampleAnswer13collapse" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Собираюсь выбраться в Карелию поохотиться. Могу ли я провести в самолете охотничье ружье?</h5>
+                    </div>
+                    <hr>
+                    <p class="mb-1 text-secondary">
+                   
+                    </p>
+                    <small class="text-muted text-warning"><u>Подробнее</u></small>
+                    <!-- Collapsed content -->
+                    <div class="collapse mt-3" id="shortExampleAnswer13collapse">
+                      <p class="text-secondary">На основании  Приказа №104 РФ и положений Воздушного кодекса Российской Федерации вы можете перевозить оружие в зарегистированном багаж, предварительно упаковав его согласно требованиям авиакомпании, предъявляемым к провозу оружия. Охотничье оружие можно перевозить самолетом при условии, что оно зарегистрировано в соответствующих органах и вы имеете разрешительный документ с официальным подтверждением данного факта. Пассажиру-охотнику необходимо иметь при себе охотничий билет с вписанным номером оружия, а также документы на право владения, хранения и провоза ружья или винтовки.</p>
+                      <p class="text-secondary">Относительно патронов: в авиалайнере разрешается перевозить до четырех сотен патронов общим весом не более пяти килограмм.</p>
+                    </div>
+                  </a>
+<a href="#shortExampleAnswer14collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer14collapse"
+                  aria-controls="shortExampleAnswer14collapse" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Какие документы требуют при провозе оружия самолетом?</h5>
+                  </div>
+                  <hr>
+                  <p class="mb-1 text-secondary">
+                 
+                  </p>
+                  <small class="text-muted text-warning"><u>Подробнее</u></small>
+                  <!-- Collapsed content -->
+                  <div class="collapse mt-3" id="shortExampleAnswer14collapse">
+                    <p class="text-secondary">• разрешение на хранение и ношение оружия;</p>
+                    <p class="text-secondary">• разрешения на ввоз/вывоз в страну/из страны;</p>
+                    <p class="text-secondary">• разрешение таможни (при необходимости);</p>
+                    <p class="text-secondary">• документацию, подтверждающую подготовку патронов к провозу в самолете, нераспечатанность заводской упаковки, точное количество патронов и т.п.</p>
+                    
+                  </div>
+                </a>
+<a href="#shortExampleAnswer15collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer15collapse" data-mdb-collapse-init aria-expanded="false"
+                aria-controls="shortExampleAnswer15collapse" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Если я выезжаю с охотничьим ружьем за границу, нужны ли какие-то дополнительные документы?</h5>
+                </div>
+                <hr>
+                <p class="mb-1 text-secondary">
+                 
+                </p>
+                <small class="text-muted text-warning"><u>Подробнее...</u></small>
+                <!-- Collapsed content -->
+                <div class="collapse mt-3" id="shortExampleAnswer15collapse">
+              <p class="text-secondary">Если вы выезжаете с винтовкой или ружьем за границу, вам следует задекларировать оружие на таможне. Разрешение на вывоз огнестрельных средств за границу выдается Министерством внутренних дел Российской Федерации, а на ввоз в другую страну – соответствующими органами этого государства. Кроме этих разрешений, вам необходимо заблаговременно получить официальное приглашение на охоту в ту страну, куда вы направляетесь. Этот документ вы также предъявляете таможенному инспектору.</p>
+              <p class="text-secondary">Для перевозки оружия и боеприпасов к нему пассажиру необходимо предъявить разрешение на право хранение и ношения оружия, а в случае международной перевозки дополнительно к перечисленным документам в Таможенный пункт аэропорта вылета необходимо предоставить разрешение органов внутренних дел РФ на право ввоза/вывоза в/из РФ оружия и боеприпасов к нему. Дополнительную информацию о необходимых документах для ввоза/вывоза оружия, порядке их оформления Вы сможете получить в Федеральной таможенной службе РФ по телефону +7 (495) 449-77-71.</p>
+                </div>
+              </a>
+
+<a href="#shortExampleAnswer16collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer16collapse" data-mdb-collapse-init aria-expanded="false"
+              aria-controls="shortExampleAnswer16collapse" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Нужно ли оплачивать провоз оружия в самолете?</h5>
+              </div>
+              <hr>
+              <p class="mb-1 text-secondary">
+               
+              </p>
+              <small class="text-muted text-warning"><u>Подробнее...</u></small>
+              <!-- Collapsed content -->
+              <div class="collapse mt-3" id="shortExampleAnswer16collapse">
+<p class="text-secondary">При условии, что оружие и боеприпасы к нему являются единственным местом багажа авиапассажира и не превышают норму бесплатного провоза багажа, установленного авиакомпанией-перевозчиком, оплата за перевозку оружия авиакомпаниями не требуется. Если обнаруживается превышение установленных норм багажа, то оплата взимается согласно тарифам за сверхнормативный багаж.</p>   
+<p class="text-secondary">Требования «Аэрофлота»</p> 
+<p class="text-secondary">Обращаем Ваше внимание на то, что согласно п. 122 Федеральных авиационных правил пассажир имеет право провоза своего багажа в пределах установленной нормы без дополнительной платы. Нормы бесплатного провоза багажа устанавливаются перевозчиком. Согласно установленным в нашей авиакомпании правилам такая категория багажа как оружие не входит в бесплатную норму провоза багажа и подлежит обязательной оплате.</p>         
+<p class="text-secondary">Таким образом, аэропортовые сборы оплачиваются за наземное спец.обслуживание в аэропорту, а оплата за багаж взимается непосредственно за перевозку оружия.</p>      
+</div>
+            </a>
+<a href="#shortExampleAnswer17collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer17collapse"
+              aria-controls="shortExampleAnswer17collapse" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Занимаюсь спортивной стрельбой. Впервые буду лететь на соревнования с оружием. Как следует его подготовить, чтобы не было проблем на таможне?</h5>
+              </div>
+              <hr>
+              <p class="mb-1 text-secondary">
+             
+              </p>
+              <small class="text-muted text-warning"><u>Подробнее</u></small>
+              <!-- Collapsed content -->
+              <div class="collapse mt-3" id="shortExampleAnswer17collapse">
+<p class="text-secondary">Перед тем как упаковывать оружие для его перевозки в самолете, следует помнить о том, что каждый предмет оружия приравнивается к одному багажному месту. Запомните: оружие должно быть разряжено и безопасно упаковано в чемодан или футляр (чехол, кобуру, кейс или специальную тару). Патроны упаковываются в футляр (чехол, кобуру, кейс или специальную тару) вместе с оружием. В случае отсутствия места в футляре патроны упаковываются в специальный пластмассовый кофр (общим весом не более 5 кг). Подробнее: 8-495-578-83-54</p>
+              </div>
+            </a>
+<a href="#shortExampleAnswer18collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer18collapse" data-mdb-collapse-init aria-expanded="false"
+            aria-controls="shortExampleAnswer18collapse" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">У меня билет с 12-часовой пересадкой. Нужно ли будет мне второй раз регистрировать свое оружие?</h5>
+            </div>
+            <hr>
+            <p class="mb-1 text-secondary">
+             
+            </p>
+            <small class="text-muted text-warning"><u>Подробнее...</u></small>
+            <!-- Collapsed content -->
+            <div class="collapse mt-3" id="shortExampleAnswer18collapse">
+           <p class="text-secondary">Оформление и перевозка всех видов оружия трансферных авиапассажиров происходит до первого пункта посадки самолета, на общих основаниях. Это означает, что в аэропорту пересадки оружие снимают с борта и выдают пассажиру, который должен будет обратиться на линию регистрации следующего рейса не позднее, чем за полтора часа до вылета, предъявив оружие и необходимые документы для его перевозки на воздушном судне.</p>
+           <p class="text-secondary">При трансферных перевозках оформление оружия до конечного пункта следования не производится, поэтому если Вы следуете трансфером, то в аэропорту стыковки, Вам необходимо получить оружие и оформить его на следующий рейс.</p>
+            </div>
+          </a>
+<a href="#shortExampleAnswer19collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer19collapse"
+            aria-controls="shortExampleAnswer19collapse" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">У меня пневматический пистолет, который относится к разделу "прочие оружия". Я его сдаю как обычно в багаже? или отдельно? И соответственно, если отдельно, то как его получать? И нужно ли иметь на него какие либо документы? При покупке их не выдали.</h5>
+            </div>
+            <hr>
+            <p class="mb-1 text-secondary">
+           
+            </p>
+            <small class="text-muted text-warning"><u>Подробнее</u></small>
+            <!-- Collapsed content -->
+            <div class="collapse mt-3" id="shortExampleAnswer19collapse">
+              <p class="text-secondary">Информируем Вас о том, что в соответствии с нормативными правовыми документами, действующими на территории Российской Федерации, вы можете перевозить на воздушном судне пневматический пистолет с дульной энергией до 3 Дж только в зарегистрированном багаже. Перевозка баллончиков со сжатым газом для пневматического пистолета запрещена.</p>
+              <p class="text-secondary">По прибытии в Международный аэропорт Шереметьево Вам необходимо сообщить сотрудникам досмотра, работающим на входах в аэровокзальный комплекс, о наличии в ваших вещах пневматического пистолета.</p>
+            </div>
+          </a>
+<a href="#shortExampleAnswer20collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer20collapse" data-mdb-collapse-init aria-expanded="false"
+          aria-controls="shortExampleAnswer20collapse" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">У меня намечается командировка в Казахстан, могу ли я провезти с собой на самолете зарегистрированный газовый пистолет (сдав оружие в спецприемник)?</h5>
+          </div>
+          <hr>
+          <p class="mb-1 text-secondary">
+           
+          </p>
+          <small class="text-muted text-warning"><u>Подробнее...</u></small>
+          <!-- Collapsed content -->
+          <div class="collapse mt-3" id="shortExampleAnswer20collapse">
+         <p class="text-secondary">Для вывоза из России оружия, в том числе газового, надо получить в МВД разрешение на вывоз, в аэропорту оружие сдается в САБ (служба авиационной безопасности). Порядок ввоза оружия в Казахстан или любую другую страну определяется законами этой страны, можно проконсультироваться в посольстве или консульстве. И еще: боеприпасы к газовому оружию запрещены к перевозке авиатранспортом.</p>
+          </div>
+        </a>
+<a href="#shortExampleAnswer21collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer21collapse"
+          aria-controls="shortExampleAnswer21collapse" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Можно ли взять на борт самолета и перевезти пиротехнику (салюты, петарды) если да, то каким образом, что для этого нужно?</h5>
+          </div>
+          <hr>
+          <p class="mb-1 text-secondary">
+         
+          </p>
+          <small class="text-muted text-warning"><u>Подробнее</u></small>
+          <!-- Collapsed content -->
+          <div class="collapse mt-3" id="shortExampleAnswer21collapse">
+            <p class="text-secondary">Согласно правил перевозки пассажиров, багажа и груза авиакомпаниями, опасные предметы, не разрешенные к перевозке в пассажирском багаже, включают взрывчатые вещества и предметы, ими начиненные, средства взрывания:</p>
+            <p class="text-secondary">пороха охотничьи всякие, в любой упаковке и в любом количестве;</p>
+            <p class="text-secondary">патроны боевые (в том числе малокалиберные);</p>
+            <p class="text-secondary">капсюли (пистоны) охотничьи и капсюли-детонаторы;</p>
+            <p class="text-secondary">пиротехнические средства: сигнальные и осветительные ракеты, посадочные шашки, дымопатроны, спички подрывника, бенгальские огни, петарды железнодорожные;</p>
+            <p class="text-secondary">динамит, тол, аммонал, тротил и другие взрывчатые вещества.</p>
+            <p class="text-secondary">– Подробный перечень опасных веществ и предметов, запрещенных пассажирам к перевозке на гражданских воздушных судах, содержится в Правилах перевозки опасных грузов воздушным транспортом, введенных в действие приказом Министра транспорта Российской Федерации.</p>
+          </div>
+        </a>
+<a href="#shortExampleAnswer22collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer22collapse"
+        aria-controls="shortExampleAnswer22collapse" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Собираемся перевезти из Краснодара в Новосибирск боевую саблю ретро, приобретенную на рынке с рук, для подарка юбиляру. Какие требования мы должны выполнить в соответствии с правилами?</h5>
+        </div>
+        <hr>
+        <p class="mb-1 text-secondary">
+       
+        </p>
+        <small class="text-muted text-warning"><u>Подробнее</u></small>
+        <!-- Collapsed content -->
+        <div class="collapse mt-3" id="shortExampleAnswer22collapse">
+          <p class="text-secondary">В соответствии с Правилами проведения предполетного и послеполетного досмотров, утверждёнными приказом Минтранса России от 25.07.2007 г. №104, сабли разрешено перевозить на борту воздушного судна, с соблюдением требуемых условий:</p>
+          <p class="text-secondary">- в зарегистрированном багаже в грузовых, багажных отсеках воздушного судна
+            с изолированным доступом пассажиров к багажу во время полета.</p>
+          <p class="text-secondary">Во время прохождения предполётного досмотра необходимо быть готовым к досмотру сабли ручным контактным методом с привлечением сотрудника полиции. Вопрос о правомерности перевозки сабли на территории России относится к компетенции МВД Российской Федерации.</p>
+        </div>
+      </a>
+<a href="#shortExampleAnswer23collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer23collapse"
+      aria-controls="shortExampleAnswer23collapse" class="list-group-item list-group-item-action">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Планирую рейсом Аэрофлота перевезти один травматический пистолет и упаковку патронов. Имеется соответствующее разрешение. Разъясните мне порядок действий в аэропорту (Шереметьево, терминал D) по сдаче и оформлению оружия для дальнейшей перевозки.</h5>
+      </div>
+      <hr>
+      <p class="mb-1 text-secondary">
+     
+      </p>
+      <small class="text-muted text-warning"><u>Подробнее</u></small>
+      <!-- Collapsed content -->
+      <div class="collapse mt-3" id="shortExampleAnswer23collapse">
+        <p class="text-secondary">Информирую Вас о том, что порядок прохождения формальностей при перевозке оружия и боеприпасов следующий:</p>
+        <p class="text-secondary">1. Необходимо заблаговременно приехать в аэропорт, не позднее, чем за 2 часа до вылета Вашего рейса.</p>
+        <p class="text-secondary">2. При входе в терминал D Международного аэропорта Шереметьево необходимо заявить инспекторам по досмотру о наличии у Вас оружия и боеприпасов.</p>
+        <p class="text-secondary">3. На линии регистрации пассажиров проинформировать о намерении перевезти оружие и боеприпасы.</p>
+        <p class="text-secondary">4. Пройти процедуру передачи оружия для временного хранения на период полёта.</p>
+        <p class="text-secondary">Более подробную информацию о правилах перевозки оружия на рейсах ПАО «Аэрофлот – Российские авиалинии» можно получить на сайте авиакомпании или пройти по прямой ссылке http://www.aeroflot.ru/cms/flight/safety_regulations.</p>
+      </div>
+    </a>
+
+</div>
+           </div>
+                  </div>
+            </div>
+            <div class="row">
+                <h4 class="text-secondary">Провоз лекарственных средств
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                      <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                        <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+                    </button>
+                </h4>
+                  <div class="collapse" id="collapseExample3">
+                    <div class="card card-body">
+                    <div class="list-group w-100">
+                      <a href="#shortExampleAnswer24collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer24collapse"
+                      aria-controls="shortExampleAnswer24collapse" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Как провезти ингалятор в багаже? Размер 30-30-30. Есть какие-то правила по этому вопросу? Как провести лекарства в ручной клади? 2 ампулы в пластике 5 мл они требуют определенного температурного режима.</h5>
+                      </div>
+                      <hr>
+                      <p class="mb-1 text-secondary">
+                     
+                      </p>
+                      <small class="text-muted text-warning"><u>Подробнее</u></small>
+                      <!-- Collapsed content -->
+                      <div class="collapse mt-3" id="shortExampleAnswer24collapse">
+                        <p class="text-secondary">Информируем Вас о том, что перевозка воздушным транспортом медицинского ингалятора по вопросам авиационной безопасности не запрещена. Правила перевозки багажа Вам необходимо уточнить у авиакомпании перевозчика. Например, у авиакомпании «Аэрофлот» норма и вес бесплатного провоза зарегистрированного багажа у пассажиров эконом класса – 1 место не более 23 кг (не превышает 158 см по сумме 3-х измерений).</p>
+                        <p class="text-secondary">В соответствии с Приложением №1 к «Правилам проведения предполетного и послеполетного досмотров», утверждённых приказом Минтранса России от 25.07.2007 г. №104 (ред. от 16.04.2012), разрешено перевозить на борту воздушного судна, с соблюдением требуемых условий, в вещах, находящихся при пассажире:</p>
+                        <p class="text-secondary">-  жидкости, гели и аэрозоли, относящиеся к неопасным:</p>
+                        <p class="text-secondary">в емкостях вместимостью не более 100 мл (или эквивалентной емкостью в других единицах измерения объема), упакованные в надежно закрывающийся прозрачный пластиковый пакет объемом не более 1 л - один пакет на пассажира.                        </p>
+                        <p class="text-secondary">Жидкости в контейнерах емкостью более 100 мл к перевозке не принимаются даже в том случае, если емкость заполнена лишь частично.</p>
+                        <p class="text-secondary">Исключение по перевозке имеют лекарства, специальные диетические потребности, детское питание, в том числе материнское молоко, в количестве, необходимом на время полета.</p>
+                        <p class="text-secondary">Рекомендую Вам иметь при себе медицинскую справку или медицинское заключение о необходимости приёма лекарств, которые вы планируете взять с собой в поездку.</p>
+                      </div>
+                    </a>
+
+                    <a href="#shortExampleAnswer25collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer25collapse"
+                      aria-controls="shortExampleAnswer25collapse" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Как правильно оформить и перевезти лекарство (деносумаба в дозе 120 мг во флаконах по 1,7 мг) из Германии в Омск с пересадкой в Москве?</h5>
+                      </div>
+                      <hr>
+                      <p class="mb-1 text-secondary">
+                    
+                      </p>
+                      <small class="text-muted text-warning"><u>Подробнее</u></small>
+                      <!-- Collapsed content -->
+                      <div class="collapse mt-3" id="shortExampleAnswer25collapse">
+                        <p class="text-secondary">Информируем Вас о том, что перевозка воздушным транспортом лекарственного препарата деносумаба, по вопросам авиационной безопасности не запрещена как в вещах, которые Вы планируете взять в салон самолёта, так и в зарегистрированном багаже.</p>
+                        <p class="text-secondary">Всоответствии с Приложением №1 к «Правилам проведения предполетного и послеполетного досмотров», утверждённых приказом Минтранса России от 25.07.2007 г. №104, разрешено перевозить на борту воздушного судна, с соблюдением требуемых условий, в вещах, находящихся при пассажире:</p>
+                        <p class="text-secondary">- жидкости, гели и аэрозоли, относящиеся к неопасным:</p>
+                        <p class="text-secondary">в емкостях вместимостью не более 100 мл (или эквивалентной емкостью в других единицах измерения объема), упакованные в надежно закрывающийся прозрачный пластиковый пакет объемом не более 1 л - один пакет на пассажира.</p>
+                        <p class="text-secondary">Жидкости в контейнерах емкостью более 100 мл к перевозке не принимаются даже в том случае, если емкость заполнена лишь частично.</p>
+                        <p class="text-secondary">Исключение по перевозке имеют лекарства, специальные диетические потребности, детское питание, в том числе материнское молоко, в количестве, необходимом на время полета.</p>
+                        <p class="text-secondary">Рекомендую Вам иметь при себе медицинскую справку или медицинское заключение о необходимости приёма деносумаба, который вы планируете взять с собой в поездку. В случае перелёта за пределами Российской Федерации копия справки на английском языке возможно будет необходима, всё зависит от правил предполётного досмотра иностранного государства, из которого Вы планируете вылетать, но такую информацию мы не предоставляем.</p>
+                      </div>
+                    </a>
+        <a href="#shortExampleAnswer26collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer26collapse"
+          aria-controls="shortExampleAnswer26collapse" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Может ли жена провезти лекарство, приобретенное по рецепту на имя мужа? Препарат гормональный Омнадрен 250.</h5>
+          </div>
+          <hr>
+          <p class="mb-1 text-secondary">
+        
+          </p>
+          <small class="text-muted text-warning"><u>Подробнее</u></small>
+          <!-- Collapsed content -->
+          <div class="collapse mt-3" id="shortExampleAnswer26collapse">
+            <p class="text-secondary">Информирую Вас о том, что перевозка воздушным транспортом лекарственного препарата Омнадрен 250 по вопросам авиационной безопасности, действующих на территории России, не запрещена как в вещах, которые Вы планируете взять в салон самолёта, так и в зарегистрированном багаже.</p>
+            <p class="text-secondary">В соответствии с Приложением №1 к «Правилам проведения предполетного и послеполетного досмотров», утверждённых приказом Минтранса России от 25.07.2007 г. №104, разрешено перевозить на борту воздушного судна, с соблюдением требуемых условий, в вещах, находящихся при пассажире:</p>
+            <p class="text-secondary">- жидкости, гели и аэрозоли, относящиеся к неопасным:</p>
+            <p class="text-secondary">в емкостях вместимостью не более 100 мл (или эквивалентной емкостью в других единицах измерения объема), упакованные в надежно закрывающийся прозрачный пластиковый пакет объемом не более 1 л - один пакет на пассажира.</p>
+            <p class="text-secondary">Жидкости в контейнерах емкостью более 100 мл к перевозке не принимаются даже в том случае, если емкость заполнена лишь частично.</p>
+            <p class="text-secondary">Исключение по перевозке имеют лекарства, специальные диетические потребности, детское питание, в том числе материнское молоко, в количестве, необходимом на время полета.</p>
+            <p class="text-secondary">Рекомендую Вашей жене иметь при себе медицинскую справку или медицинское заключение и рецепт на лекарственный препарат Омнадрена 250, который вы планируете взять с собой в поездку.</p>
+          </div>
+        </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="text-secondary">Перелет детей с сопровождением и самостоятельно
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                      <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                        <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+                    </button>
+                </h4>
+                  <div class="collapse" id="collapseExample4">
+                    <div class="card card-body">
+                     <div class="list-group w-100">
+                      <a href="#shortExampleAnswer27collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer27collapse" data-mdb-collapse-init aria-expanded="false"
+aria-controls="shortExampleAnswer27collapse" class="list-group-item list-group-item-action">
+<div class="d-flex w-100 justify-content-between">
+  <h5 class="mb-1">Моему ребенку на момент полета будет полных 12 лет. По правилам компании "Аэрофлот" он может лететь один БЕЗ дополнительной услуги - услуги сопровождения. Я могу ли я, как родитель ребенка, проводить именно до входа в самолет?</h5>
+</div>
+<hr>
+<p class="mb-1 text-secondary">
+ 
+</p>
+<small class="text-muted text-warning"><u>Подробнее...</u></small>
+<!-- Collapsed content -->
+<div class="collapse mt-3" id="shortExampleAnswer27collapse">
+<p class="text-secondary">Информируем Вас о том, что в стерильную зону аэропорта (зону ожидания посадки между пунктом досмотра или зоной контроля пассажиров и воздушным судном), допускаются только пассажиры и обслуживающий персонал. Нахождение других лиц в стерильной зоне аэропорта запрещено. По прибытии в Международный аэропорт Шереметьево рекомендуем Вам воспользоваться услугой по сопровождению детей.</p>
+</div>
+</a>
+                     </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <h4 class="text-secondary">Провоз жидкостей, алкоголя, сигарет
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+                      <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                        <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+                    </button>
+                </h4>
+                  <div class="collapse" id="collapseExample5">
+                    <div class="card card-body">
+                      <div class="list-group w-100">
+                        <a href="#shortExampleAnswer28collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer28collapse"
+aria-controls="shortExampleAnswer28collapse" class="list-group-item list-group-item-action">
+<div class="d-flex w-100 justify-content-between">
+  <h5 class="mb-1">Сколько жидкости можно брать в салон самолета?</h5>
+</div>
+<hr>
+<p class="mb-1 text-secondary">
+
+</p>
+<small class="text-muted text-warning"><u>Подробнее</u></small>
+<!-- Collapsed content -->
+<div class="collapse mt-3" id="shortExampleAnswer28collapse">
+  <p class="text-secondary">На борту воздушного судна в вещах, находящихся при пассажирах разрешено перевозить: жидкости в емкостях вместимостью не более 100 мл (или эквивалентной емкостью в других единицах измерения объема), упакованные в надежно закрывающийся прозрачный пластиковый пакет объемом не более 1л - один пакет на пассажира.</p>
+  <p class="text-secondary">Исключение по перевозке имеют лекарства, детское питание и специальные диетические потребности.</p>
+  <p class="text-secondary">К числу жидкостей относятся: парфюмерная продукция, пена для бритья, дезодоранты, гели, спреи, шампуни, лосьоны, кремы, пасты, включая зубную пасту, тушь для ресниц, напитки, жидкие пищевые продукты и т. п.</p>
+  <p class="text-secondary">Подробно правила перевозки жидкостей на самолете выможете прочитать на нашем сайте в разделе Правила перевозки пассажиров, багажа и ручной клади.</p>
+</div>
+</a>
+<a href="#shortExampleAnswer29collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer29collapse" data-mdb-collapse-init aria-expanded="false"
+aria-controls="shortExampleAnswer29collapse" class="list-group-item list-group-item-action">
+<div class="d-flex w-100 justify-content-between">
+<h5 class="mb-1">Лечу из Стамбула до Екатеринбурга с пересадкой в Шереметьево. Могу ли я провезти алкоголь, приобретенный в дьюти-фри аэропорта Стамбул, не сдавая его в багаж?</h5>
+</div>
+<hr>
+<p class="mb-1 text-secondary">
+
+</p>
+<small class="text-muted text-warning"><u>Подробнее...</u></small>
+<!-- Collapsed content -->
+<div class="collapse mt-3" id="shortExampleAnswer29collapse">
+<p class="text-secondary">Можете, при условии, что спиртные напитки, приобретенные в магазинах беспошлинной торговли (Duty Free), надежно упакованы в запечатанный пластиковый пакет c чеком, подтверждающим совершение покупки в магазинах беспошлинной торговли в дни поездки.</p>               
+</div>
+</a>
+<a href="#shortExampleAnswer30collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer30collapse"
+aria-controls="shortExampleAnswer30collapse" class="list-group-item list-group-item-action">
+<div class="d-flex w-100 justify-content-between">
+<h5 class="mb-1">Могу ли я взять с собой в ручную кладь электронную сигарету, не используя ее на борту? Сдаваемого багажа у меня не будет.</h5>
+</div>
+<hr>
+<p class="mb-1 text-secondary">
+
+</p>
+<small class="text-muted text-warning"><u>Подробнее</u></small>
+<!-- Collapsed content -->
+<div class="collapse mt-3" id="shortExampleAnswer30collapse">
+<p class="text-secondary">Информируем Вас о том, что перевозка воздушным транспортом электронных сигарет, включая электронные сигары и другие испарители для личного пользования содержащие батареи, при перевозке пассажирами или членами экипажа для личного пользования по вопросам авиационной безопасности, действующих на территории Российской Федерации, не запрещена, при условии соблюдения следующих требований:</p>
+<p class="text-secondary">небольшие литиевые аккумуляторы энергоемкостью до 100 Вт-ч / с содержанием лития не более 2 г (LC)</p>
+<p class="text-secondary">В ручной клади:</p>
+<p class="text-secondary">• Разрешается внутри оборудования</p>
+<p class="text-secondary">• Запасные аккумуляторы должны отдельно защищаться таким образом, чтобы исключалась возможность короткого замыкания (в розничной упаковке, обмотанные изоляционной лентой открытых полюсов или размещение каждой батареи в отдельном пластиковом мешке или защитном пакете).</p>
+<p class="text-secondary">Использование (курение) электронных сигарет в здании аэровокзала и на борту ВС запрещено.</p>
+</div>
+</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <h4 class="text-secondary">Досмотр в аэропорту
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+                      <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                        <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+                    </button>
+                </h4>
+                  <div class="collapse" id="collapseExample6">
+                    <div class="card card-body">
+                      <div class="list-group w-100">
+                        <a href="#shortExampleAnswer31collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer31collapse" data-mdb-collapse-init aria-expanded="false"
+                            aria-controls="shortExampleAnswer31collapse" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">После сложного перелома мне была проведена операция, и в плечо вставлена металлическая пластина с шурупами. Скажите, пожалуйста, не возникнет ли у меня проблем с металлоискателем при прохождении досмотра при входе в терминал?</h5>
+                            </div>
+                            <hr>
+                            <p class="mb-1 text-secondary">
+
+                            </p>
+                            <small class="text-muted text-warning"><u>Подробнее...</u></small>
+                            <!-- Collapsed content -->
+                            <div class="collapse mt-3" id="shortExampleAnswer31collapse">
+                            <p class="text-secondary">Рекомендуем Вам перед прохождением через стационарный металлоискатель предупредить инспектора по досмотру о том, что у Вас в плече металлическая пластина с шурупами. Наличие медицинской справки или медицинского заключения с подтверждением вышеуказанной информации приветствуется. Справка должна быть заверена печатью медицинского учреждения и личным штампом врача, выписавшего эту справку.
+                            </p>
+                            <p class="text-secondary">Желаем Вам здоровья и приятной поездки!</p>
+
+                            </div>
+                          </a>
+<a href="#shortExampleAnswer32collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer32collapse"
+aria-controls="shortExampleAnswer32collapse" class="list-group-item list-group-item-action">
+<div class="d-flex w-100 justify-content-between">
+<h5 class="mb-1">Подскажите пожалуйста про проведение досмотра с использованием рентгенотелевизионного интроскопа. Можно ли пройти досмотр другим способом, так как рентген при беременности опасен для здоровья, даже на маленьком сроке.</h5>
+</div>
+<hr>
+<p class="mb-1 text-secondary">
+
+</p>
+<small class="text-muted text-warning"><u>Подробнее</u></small>
+<!-- Collapsed content -->
+<div class="collapse mt-3" id="shortExampleAnswer32collapse">
+<p class="text-secondary">Рентгенотелевизионный интроскоп используется исключительно для досмотра предметов багажа и ручной клади. Для досмотра пассажиров используются стационарные (рамочные) и ручные металлоискатели, а так же радиолокационные сканирующие порталы. Вы можете отказаться от сканирования в радиолокационном портале, предупредив инспектора по досмотру о вашем положении, и попросить посмотреть Вас ручным (контактным) методом. Использование ручного (контактного) метода не освобождает Вас от прохода через рамочный металлоискатель, который безопасен при беременности.</p>
+
+</div>
+</a>
+<a href="#shortExampleAnswer33collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer33collapse" data-mdb-collapse-init aria-expanded="false"
+aria-controls="shortExampleAnswer33collapse" class="list-group-item list-group-item-action">
+<div class="d-flex w-100 justify-content-between">
+<h5 class="mb-1">Как обстоит дело с пирсингом при прохождении досмотра: нужно ли его снимать? (У моей девушки много пирсинга, в губе,в носу, в подбородке, в ушах).</h5>
+</div>
+<hr>
+<p class="mb-1 text-secondary">
+
+</p>
+<small class="text-muted text-warning"><u>Подробнее...</u></small>
+<!-- Collapsed content -->
+<div class="collapse mt-3" id="shortExampleAnswer33collapse">
+<p class="text-secondary">В приказе Минтранса России от 25.07.2007 №104 «Об утверждении правил проведения предполетного и послеполетного досмотров» не оговаривается необходимость снятия пирсинга во время процедуры предполетного досмотра. В случае срабатывания рамки стационарного металлоискателя, инспектор проведет досмотр с использованием ручного (контактного) метода и переносного металлоискателя.</p>
+
+
+</div>
+</a>
+<a href="#shortExampleAnswer34collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer34collapse"
+aria-controls="shortExampleAnswer34collapse" class="list-group-item list-group-item-action">
+<div class="d-flex w-100 justify-content-between">
+<h5 class="mb-1">Я часто летаю и опасаюсь опастности для здоровья от частого прохождения через раздевающие сканеры. Как регламентируется моя просьба провести осмотр путём ощупывания? Имеет ли право сотрудник СБ отказать мне в таком осмотре и в каких случаях?</h5>
+</div>
+<hr>
+<p class="mb-1 text-secondary">
+
+</p>
+<small class="text-muted text-warning"><u>Подробнее</u></small>
+<!-- Collapsed content -->
+<div class="collapse mt-3" id="shortExampleAnswer34collapse">
+<p class="text-secondary">В соответствии с приказа Минтранса России от 25.07.2007 №104 «Правил проведения предполетного и послеполетных досмотров» процедура досмотра является обязательной для всех. При отказе пассажира воздушного судна от предполетного досмотра договор воздушной перевозки пассажира считается расторгнутым в соответствии с пунктом 3 статьи 85 Воздушного кодекса.В Вашем случае Вы не отказываетесь от прохождения процедуры досмотра, а просите заменить досмотр с применением радиолокационного портала, на досмотр ручным (контактным) методом. О чем Вы должны заранее предупредить инспектора по досмотру.</p>
+</div>
+</a>
+<a href="#shortExampleAnswer35collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer35collapse"
+aria-controls="shortExampleAnswer35collapse" class="list-group-item list-group-item-action">
+<div class="d-flex w-100 justify-content-between">
+<h5 class="mb-1">Можно ли с собой проносить средство самообороны (перцовый баллончик) в аэропорт, когда провожаешь кого-либо свои ходом?</h5>
+</div>
+<hr>
+<p class="mb-1 text-secondary">
+
+</p>
+<small class="text-muted text-warning"><u>Подробнее</u></small>
+<!-- Collapsed content -->
+<div class="collapse mt-3" id="shortExampleAnswer35collapse">
+<p class="text-secondary">Информируем Вас о том, что Международный аэропорт Шереметьево является объектом транспортной инфраструктуры. В целях обеспечения транспортной безопасности производится досмотр лиц, входящих в терминалы Международного аэропорта Шереметьево, и вещей, находящихся при них. В случае обнаружения средств самообороны у лица, входящего в аэропорт Шереметьево, вызывается сотрудник полиции, который принимает решение о допуске и порядке перемещения или отказе в допуске предметов и веществ, которые могут быть использованы для осуществления актов незаконного вмешательства в деятельность Международного аэропорта Шереметьево, создания угрозы общественной безопасности, жизни и здоровью граждан.</p>
+</div>
+</a>
+<a href="#shortExampleAnswer36collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer36collapse"
+aria-controls="shortExampleAnswer36collapse" class="list-group-item list-group-item-action">
+<div class="d-flex w-100 justify-content-between">
+<h5 class="mb-1">Иногда видел как после прохождения рамки ваши сотрудники просят у пассажиров открыть сумки и начинают сами там рыться, выкладывать вещи. Имеют ли они законные основания на это?</h5>
+</div>
+<hr>
+<p class="mb-1 text-secondary">          
+</p>
+<small class="text-muted text-warning"><u>Подробнее</u></small>
+<!-- Collapsed content -->
+<div class="collapse mt-3" id="shortExampleAnswer36collapse">
+  <p class="mb-1 text-secondary">Информируем Вас о том, что досмотр физических лиц и вещей, находящихся при них, на входах в терминалы Международного аэропорта Шереметьево осуществляется в соответствии с нормативными документами в области транспортной безопасности:</p>
+  <p class="mb-1 text-secondary">- Федеральным законом «О транспортной безопасности» от 09.02.2007 г. №16-ФЗ;</p>
+  <p class="mb-1 text-secondary">- «Требованиями по обеспечению транспортной безопасности, учитывающие уровни безопасности для различных категорий объектов транспортной инфраструктуры и транспортных средств», утверждённых приказом Минтранса России от 08.02.2011 г. №40.</p>
+</div>
+</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <h4 class="text-secondary">Провоз химических веществ, лаков, бытовой химии
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
+                      <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                        <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+                    </button>
+                </h4>
+                  <div class="collapse" id="collapseExample7">
+                    <div class="card card-body">
+                      <div class="list-group w-100">
+                        <a href="#shortExampleAnswer37collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer37collapse"
+                        aria-controls="shortExampleAnswer37collapse" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Разрешен ли провоз гидроксида калия (поташ) и гидроксида натрия (щелочь) и в каких количествах, при перелете в Финляндию.</h5>
+                        </div>
+                        <hr>
+                        <p class="mb-1 text-secondary">
+                       
+                        </p>
+                        <small class="text-muted text-warning"><u>Подробнее</u></small>
+                        <!-- Collapsed content -->
+                        <div class="collapse mt-3" id="shortExampleAnswer37collapse">
+                          <p class="text-secondary">Информируем Вас, что в соответствии с Приложением 1 «Правил проведения предполетного и послеполетного досмотров» (Приказ Минтранса РФ от 25.07.2007 №104), гидроксид калия и гидроксид кальция запрещены к провозу на борту воздушного судна.</p>
+                        </div>
+                      </a>
+                      <a href="#shortExampleAnswer38collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer38collapse"
+                      aria-controls="shortExampleAnswer38collapse" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Подскажите, могу ли я провести на самолете гель-лаки личного пользования, не возникнет проблем при досмотре?</h5>
+                      </div>
+                      <hr>
+                      <p class="mb-1 text-secondary">
+                     
+                      </p>
+                      <small class="text-muted text-warning"><u>Подробнее</u></small>
+                      <!-- Collapsed content -->
+                      <div class="collapse mt-3" id="shortExampleAnswer38collapse">
+                        <p class="text-secondary">Информируем Вас о том, что в соответствии с Приложением №1 к «Правилам проведения предполетного и послеполетного досмотров», утверждённых приказом Минтранса России от 25.07.2007 г. №104 (ред. от 16.04.2012), разрешено перевозить на борту воздушного судна, с соблюдением требуемых условий, в вещах, находящихся при пассажире:</p>
+                        <p class="text-secondary">-  жидкости, гели и аэрозоли, относящиеся к неопасным:                        </p>
+                        <p class="text-secondary">в емкостях вместимостью не более 100 мл (или эквивалентной емкостью в других единицах измерения объема), упакованные в надежно закрывающийся прозрачный пластиковый пакет объемом не более 1 л - один пакет на пассажира.</p>
+                        <p class="text-secondary">Жидкости в контейнерах емкостью более 100 мл к перевозке не принимаются даже в том случае, если емкость заполнена лишь частично.                        </p>
+                        <p class="text-secondary">Исключение по перевозке имеют лекарства, специальные диетические потребности, детское питание, в том числе материнское молоко, в количестве, необходимом на время полета.</p>
+                        <p class="mb-1 text-secondary">Для ознакомления с более полным списком запрещённых предметов и веществ рекомендую Вам посетить сайт aeromash.ru, или перейти по ссылке http://www.aeromash.ru/ru/about/stoplist/stoplist_in_detail.</p>
+                      </div>
+                    </a>
+<a href="#shortExampleAnswer39collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer39collapse"
+                    aria-controls="shortExampleAnswer39collapse" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Можно ли провозить на борту самолета баллончики с жидкой резиновой краской (жидкий винил или резиновая аэрозоль)? Это небольшие металлические герметичные баллончики про 350 г.</h5>
+                    </div>
+                    <hr>
+                    <p class="mb-1 text-secondary">
+                    </p>
+                    <small class="text-muted text-warning"><u>Подробнее</u></small>
+                    <!-- Collapsed content -->
+                    <div class="collapse mt-3" id="shortExampleAnswer39collapse">
+                      <p class="text-secondary">Информируем Вас о том, что жидкая резиновая краска, жидкий винил, резиновая аэрозоль к перевозке на борту воздушного судна запрещена, как в зарегистрированном багаже, так и в вещах, находящихся при пассажире.</p>
+                      <p class="text-secondary">Всоответствии с Техническими инструкциями по безопасной перевозке опасных грузов по воздуху, жидкая резиновая краска, жидкий винил, резиновая аэрозоль, относятся к Классу 3 «Легковоспламеняющиеся жидкости» под номером 1139 по списку ООН и может перевозится только в качестве груза в соответствии с инструкцией по упаковыванию.</p>
+                      <p class="text-secondary">Рекомендую Вам при необходимости перевозки указанных предметов воспользоваться услугами компаний, осуществляющих безопасную перевозку опасных грузов по воздуху.</p>
+                    </div>
+                  </a>
+<a href="#shortExampleAnswer40collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer40collapse" data-mdb-collapse-init aria-expanded="false"
+                  aria-controls="shortExampleAnswer40collapse" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Я занимаюсь авиамоделизмом. Лечу в Россию. Могу ли я взять с собой в сдаваемый багаж краски и средства чистки кистей? Т. к. за время пребывания не успею их купить на месте.</h5>
+                  </div>
+                  <hr>
+                  <p class="mb-1 text-secondary">
+                  </p>
+                  <small class="text-muted text-warning"><u>Подробнее...</u></small>
+                  <!-- Collapsed content -->
+                  <div class="collapse mt-3" id="shortExampleAnswer40collapse">
+                <p class="text-secondary">Информирую Вас о том, что всоответствии с Приложением №1 к «Правилам проведения предполетного и послеполетного досмотров», утверждённых приказом Минтранса России от 25.07.2007 г. №104 (ред. от 16.04.2012), подробный перечень опасных веществ и предметов, запрещенных к перевозке на борту воздушного судна членами экипажа и пассажирами, содержится в Технических инструкциях по безопасной перевозке опасных грузов по воздуху (Doc 9284 AN/905 ИКАО). В колонке таблицы3-2-118 части 3Doc 9284 указано, что краска относиться к классу опасности 3 и может перевозиться только как груз, в соответствии с инструкцией по упаковыванию.</p>
+                <p class="text-secondary">Средства для чистки кистей и оборудования могут также содержать легковоспламеняющиеся компоненты и поэтому перевозка данных предметов воздушным транспортом возможна только как груз, в соответствии с инструкцией по упаковыванию.</p>
+                <p class="text-secondary">В случае если краска и средство для чистки кистей и оборудования не содержат легковоспламеняющихся, коррозирующих, токсичных и иных опасных веществ то при перевозке таких предметов необходимо иметь сертификат безопасности, подтверждающий возможность их перевозки воздушным транспортом в зарегистрированном багаже.</p>
+                  </div>
+                </a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <h4 class="text-secondary">Провоз животных и растений
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8">
+                      <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">
+                        <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+                    </button>
+                </h4>
+                  <div class="collapse" id="collapseExample8">
+                    <div class="card card-body">
+                      <div class="list-group w-100">
+                        <a href="#shortExampleAnswer41collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer41collapse"
+                  aria-controls="shortExampleAnswer41collapse" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Могу ли я перевести горшечное растение? Если да, то как его упаковать и как везти?</h5>
+                  </div>
+                  <hr>
+                  <p class="mb-1 text-secondary">
+                 Перевозка горшечных растений не запрещена...
+                  </p>
+                  <small class="text-muted text-warning"><u>Подробнее</u></small>
+                  <!-- Collapsed content -->
+                  <div class="collapse mt-3" id="shortExampleAnswer41collapse">
+                    <p class="text-secondary">Информируем Вас о том, что перевозка воздушным транспортом горшечных растенийпо вопросам авиационной безопасности, действующих на территории Российской Федерации, не запрещена, при условии соблюдения основных требований авиакомпании к вещам, которые Вы планируется взять с собой в салон самолёта.</p>
+                    <p class="text-secondary">При осуществлении перелёта за пределы Российской Федерации,по вопросу перевозки горшечных растений, рекомендуем обратиться в таможенную службу (http://svo.aero/customs/) и в санитарно-карантинный пункт аэропорта Шереметьево (http://svo.aero/quarantine/).</p>
+                    <p class="text-secondary">Желаем Вам приятного полёта!</p>
+                  </div>
+                </a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <h4 class="text-secondary">Провоз аккумуляторов и батарей питания
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample9">
+                      <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9">
+                        <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+                    </button>
+                </h4>
+                  <div class="collapse" id="collapseExample9">
+                    <div class="card card-body">
+                      <div class="list-group w-100">
+                        <a href="#shortExampleAnswer42collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer42collapse" data-mdb-collapse-init aria-expanded="false"
+                aria-controls="shortExampleAnswer42collapse" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">У меня слуховой аппарат на батарейках. Они требуют частой замены. Можно ли их перевозить в ручной клади или багажом?</h5>
+                </div>
+                <hr>
+                <p class="mb-1 text-secondary">
+                 Перевозка батарек питания для слухового аппарата не запрещена, но требует опрежеденных условий...
+                </p>
+                <small class="text-muted text-warning"><u>Подробнее...</u></small>
+                <!-- Collapsed content -->
+                <div class="collapse mt-3" id="shortExampleAnswer42collapse">
+<p class="text-secondary">Информируем Вас о том, что перевозка воздушным транспортом батареек питания для слухового аппаратапо вопросам авиационной безопасности, действующих на территории Российской Федерации, не запрещена, при условии соблюдения следующих требований:</p>    
+<p class="text-secondary">небольшие литиевые аккумуляторы энергоемкостью до 100 Вт-ч / с содержанием лития не более 2 г (LC).</p>  
+<p class="text-secondary">Примеры:</p>  
+<p class="text-secondary">• Аккумуляторы для мобильных телефонов</p>  
+<p class="text-secondary">• Камеры</p>  
+<p class="text-secondary">• Часы</p>  
+<p class="text-secondary">• Портативные музыкальные плееры</p>      
+<p class="text-secondary">• Ноутбуки</p>  
+<p class="text-secondary">В ручной клади:</p>  
+<p class="text-secondary">• Разрешается внутри оборудования</p>  
+<p class="text-secondary">• Запасные аккумуляторы должны отдельно защищаться таким образом, чтобы исключалась возможность короткого замыкания (в розничной упаковке, обмотанные изоляционной лентой открытых полюсов или размещение каждой батареи в отдельном пластиковом мешке или защитном пакете).</p>  
+<p class="text-secondary">В зарегистрированном багаже:</p>  
+<p class="text-secondary">• Должны находиться внутри оборудования</p>  
+<p class="text-secondary">• Должны быть приняты меры, предотвращающие их самопроизвольное приведение в действие</p>  
+<p class="text-secondary">• Провоз запасных аккумуляторов (не вставленных в оборудование) запрещен.</p>  
+<p class="text-secondary">Запрещается провозить в багаже:</p>  
+<p class="text-secondary">• Незаряжаемые аккумуляторы с содержанием лития более 2 г (например, аккумуляторы размера «С» и более) запрещается провозить в любом багаже; они подлежат предъявлению и перевозке как «груз» в соответствии с Техническими инструкциями по безопасной перевозке опасных грузов по воздуху (Doc 9284 AN\905).</p>         
+ </div>
+              </a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <h4 class="text-secondary">Провоз инструментов и электроприборов
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample10">
+                      <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10">
+                        <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+                    </button>
+                </h4>
+                  <div class="collapse" id="collapseExample10">
+                    <div class="card card-body">
+                      <div class="list-group w-100">
+                        <a href="#shortExampleAnswer43collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer43collapse"
+                aria-controls="shortExampleAnswer43collapse" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Можно ли перевозить в ручной клади гаечный ключ 10/12?</h5>
+                </div>
+                <hr>
+                <p class="mb-1 text-secondary">
+                </p>
+                <small class="text-muted text-warning"><u>Подробнее</u></small>
+                <!-- Collapsed content -->
+                <div class="collapse mt-3" id="shortExampleAnswer43collapse">
+<p class="text-secondary">Перевозка в салоне самолёта гаечного ключа 10/12 по нормативным документам в сфере транспортной и авиационной безопасности, действующих на территории Российской Федерации, не запрещена, при условии соблюдения основных требований авиакомпании к вещам, которые Вы планируете сдать в багаж или взять с собой в салон самолёта.</p>
+                </div>
+              </a>
+<a href="#shortExampleAnswer44collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer44collapse" data-mdb-collapse-init aria-expanded="false"
+              aria-controls="shortExampleAnswer44collapse" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Лечу по гостевой визе в Загреб через Москву в эконом классе. Могу ли я провезти в салоне мультиварку габаритами 30х30х30см?</h5>
+              </div>
+              <hr>
+              <p class="mb-1 text-secondary">
+               
+              </p>
+              <small class="text-muted text-warning"><u>Подробнее...</u></small>
+              <!-- Collapsed content -->
+              <div class="collapse mt-3" id="shortExampleAnswer44collapse">
+             <p class="text-secondary">Информируем Вас о том, что перевозка воздушным транспортом мультиварки по вопросам авиационной безопасности не запрещена, при условии соблюдения основных требований авиакомпании к вещам, которые Вы планируется взять с собой в салон самолёта.</p>
+              </div>
+            </a>
+                      </div>
+                  </div>
+            </div>
+            <div class="row">
+                <h4 class="text-secondary">Провоз малогабаритных средств передвижения
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample11" role="button" aria-expanded="false" aria-controls="collapseExample11">
+                      <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+                    </a>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample11">
+                        <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+                    </button>
+                </h4>
+                  <div class="collapse" id="collapseExample11">
+                    <div class="card card-body">
+                      <div class="list-group w-100">
+                        <a href="#shortExampleAnswer45collapse" data-mdb-collapse-init aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer45collapse"
+              aria-controls="shortExampleAnswer45collapse" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Можно ли каким-то образом перевезти гидроскутер? Если да, прошу проконсультировать о правилах перевозки.</h5>
+              </div>
+              <hr>
+              <p class="mb-1 text-secondary">
+             
+              </p>
+              <small class="text-muted text-warning"><u>Подробнее</u></small>
+              <!-- Collapsed content -->
+              <div class="collapse mt-3" id="shortExampleAnswer45collapse">
+                <p class="text-secondary">Информирую Вас о том, что с правилами перевозки малогабаритных средств для личного передвижения вы можете ознакомиться на сайте Вашего авиаперевозчика, так, например, если вы планируете перелёт авиакомпанией Аэрофлот перейдите по прямой ссылке http://www.aeroflot.ru/cms/before_and_after_fly/safety. В соответствии с рекомендациями IATA http://www.iata.org/whatwedo/cargo/dgr/Documents/lithium-battery-vehicles-cargo.pdf оборудование (airwheel, solowheel, hoverboard, mini-segway, balancewheel и т.п.), приводимое в действие батареей может быть допущено к перевозке в качестве груза и должно отправляться под номером 3171 по списку ООН в соответствие с Инструкцией по упаковыванию 952, указанных в Технических инструкциях по безопасной перевозке опасных грузов по воздуху Doc 9284-AN/905 ICAO. Присваивание ООН 3171 не предусматривает каких-либо исключений из полного применения установленных правил, т.е. не является исключением для оборудования (airwheel, solowheel, hoverboard, mini-segway, balancewheel и т.п.), приводимого в действие батареей, в том числе если энергоёмкость батареи не превышает 100 Вт-ч.</p>
+              </div>
+            </a>
+<a href="#shortExampleAnswer46collapse" data-bs-toggle="collapse" data-bs-target="#shortExampleAnswer46collapse" data-mdb-collapse-init aria-expanded="false"
+            aria-controls="shortExampleAnswer46collapse" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Каким образом необходимо оформить регистрацию перевозки ховерборда багажом авиакомпанией Аэрофлот. вылет из Нью-Йорка через Шереметьево в Южно-Сахалинск.</h5>
+            </div>
+            <hr>
+            <p class="mb-1 text-secondary">
+             
+            </p>
+            <small class="text-muted text-warning"><u>Подробнее...</u></small>
+            <!-- Collapsed content -->
+            <div class="collapse mt-3" id="shortExampleAnswer46collapse">
+           <p class="text-secondary">Информируем Вас о том, что с правилами перевозки малогабаритных средств для личного передвижения вы можете ознакомиться на сайте Вашего авиаперевозчика, так, например, если вы планируете перелёт авиакомпанией Аэрофлот перейдите по прямой ссылке http://www.aeroflot.ru/cms/before_and_after_fly/safety. В соответствии с рекомендациями IATA http://www.iata.org/whatwedo/cargo/dgr/Documents/lithium-battery-vehicles-cargo.pdf оборудование (airwheel, solowheel, hoverboard, mini-segway, balancewheel и т.п.), приводимое в действие батареей может быть допущено к перевозке в качестве груза и должно отправляться под номером 3171 по списку ООН в соответствие с Инструкцией по упаковыванию 952, указанных в Технических инструкциях по безопасной перевозке опасных грузов по воздуху Doc 9284-AN/905 ICAO. Присваивание ООН 3171 не предусматривает каких-либо исключений из полного применения установленных правил, т.е. не является исключением для оборудования (airwheel, solowheel, hoverboard, mini-segway, balancewheel и т.п.), приводимого в действие батареей, в том числе если энергоёмкость батареи не превышает 100 Вт-ч.</p>
+            </div>
+          </a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+           
+            
+    </div>
+</div>
+{% endblock content%}

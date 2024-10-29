@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block title%}
+{%endblock title%}
+{%block content%}
+<form action="" method="post" novalidate>
+    <div class="row form-control style_form_summary_row ">
+    <h1 class="text-warning">Вход в учетную запись администратора сайта<h1>
+        <hr>
+    <h5 class="text-secondary warning">Ник</h5>
+    {{form.username}}
+    <h5 class="text-secondary warning">Пароль</h5>
+    {{form.password}}
+    {{form.submit(class="btn btn-warning mt-3")}}
+    
+    </div>
+</form>
+{%endblock content%}

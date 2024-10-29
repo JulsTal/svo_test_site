@@ -1,0 +1,97 @@
+{% extends "base_education.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+<h3 class ="text-warning text-center mt-5 ьи-5">Программы дополнительного профессионального образования</h3>
+<hr>
+<div class="container">
+  <div class="row">
+    <table class="table table-white table-striped text-secondary text-center">
+      <thead class="mb-4">
+        <tr>
+          <th scope="col" class="text-secondary mb-3"><h7>Вид подготовки/ название учебного курса</h7>
+          </th>
+          <th scope="col" class="text-secondary mb-3">
+            <h7>Срок обучения (дни)</h7>
+          </th>
+          <th scope="col" class="text-secondary mb-3">
+            <h7>Срок обучения (часы)</h7>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="text-secondary">
+        {% for row in range(1, sheet1.max_row+1)%}
+            <tr >
+                {% for col in range(1, sheet1.max_column+1): %}
+                <th class="text-secondary">{{sheet1.cell(row, col).value}}</th>
+                {%endfor%}
+            </tr>
+            {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h5 class ="text-warning text-center">Дополнительные профессиональные программы</h5>
+      <h5 class ="text-warning text-center ">Повышение квалификации сил обеспечения транспортной безопасности</h5>
+      <table class="table table-white table-striped text-secondary text-center">
+        <thead class="mb-4">
+          <tr>
+            <th scope="col" class="text-secondary mb-3"><h7>Вид подготовки/ название учебного курса</h7>
+            </th>
+            <th scope="col" class="text-secondary mb-3">
+              <h7>Срок обучения (дни)</h7>
+            </th>
+            <th scope="col" class="text-secondary mb-3">
+              <h7>Срок обучения (часы)</h7>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="text-secondary">
+          {% for row in range(1, sheet2.max_row+1)%}
+              <tr >
+                  {% for col in range(1, sheet2.max_column+1): %}
+                  <th class="text-secondary">{{sheet2.cell(row, col).value}}</th>
+                  {%endfor%}
+              </tr>
+              {% endfor %}
+        </tbody>
+      </table>
+    
+    </div>
+  </div>
+</div>
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <h5 class ="text-warning text-center">Повышение квалификации иных категорий работников, связанных с обеспечения транспортной безопасности</h5>
+   
+    <table class="table table-white table-striped text-secondary text-center">
+      <thead class="mb-4">
+        <tr>
+          <th scope="col" class="text-secondary mb-3"><h7>Вид подготовки/ название учебного курса</h7>
+          </th>
+          <th scope="col" class="text-secondary mb-3">
+            <h7>Срок обучения (дни)</h7>
+          </th>
+          <th scope="col" class="text-secondary mb-3">
+            <h7>Срок обучения (часы)</h7>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="text-secondary">
+        {% for row in range(1, sheet3.max_row+1)%}
+            <tr >
+                {% for col in range(1, sheet3.max_column+1): %}
+                <th class="text-secondary">{{sheet3.cell(row, col).value}}</th>
+                {%endfor%}
+            </tr>
+            {% endfor %}
+      </tbody>
+    </table>
+  
+  </div>
+</div>
+</div>
+{%endblock content%}

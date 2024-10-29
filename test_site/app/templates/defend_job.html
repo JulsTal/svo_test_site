@@ -1,0 +1,109 @@
+{% extends "base_education.html" %}
+{% block title%}
+{%endblock title%}
+{%block content%}
+<h3 class ="text-warning text-center">Охрана труда</h3>
+<div class="conteiner mb-5 mt-5">
+    <div class="row">
+        <h4 class="text-secondary">Отдел охраны труда
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <p class="text-secondary">На предприятии создан специализированный отдел охраны труда, являющийся самостоятельным структурным подразделением.  Все специалисты отдела охраны труда имеют высшее образование и периодически обучаются в Центре переподготовки и повышения квалификации воздушного транспорта  при Федеральном государственном образовательном учреждении высшего профессионального образования «Московский государственный технический университет гражданской авиации». Основной задачей отдела охраны труда является организация работы по обеспечению безопасных условий труда работников предприятия при осуществлении мер авиационной безопасности в Международном аэропорту Шереметьево. Особенности функций отдела охраны труда:</p>
+                <p class="text-secondary">- организация работы по радиационной безопасности;</p>
+                <p class="text-secondary">- организация проведения периодических медицинских осмотров работников предприятия.</p>
+                <p class="text-secondary">В отделе охраны труда имеется нормативно-правовая база по вопросам охраны труда.</p>
+                <p class="text-secondary">Генеральным директором утверждены разработанные службой охраны труда:</p>
+                <p class="text-secondary">- стандарт предприятия по вопросам охраны труда;</p>
+                <p class="text-secondary">- программа по улучшению условий и охраны труда в АО "Шереметьево Безопасность";</p>
+                <p class="text-secondary">- программа производственного контроля за соблюдением санитарных правил и выполнением санитарно-противоэпидемиологических мероприятий в АО "Шереметьево Безопасность";</p>
+                <p class="text-secondary">- положение  «Об обучении по охране труда и проверки знаний требований охраны труда работников АО "Шереметьево Безопасность";</p>
+                <p class="text-secondary">- положение «О проведении обязательных предварительных при поступлении на работу и периодических медицинских осмотров работников АО "Шереметьево Безопасность";</p>
+                <p class="text-secondary">- памятки должностным лицам  при несчастном случае на производстве.</p>
+                <p class="text-secondary">Рабочие места инженеров по охране труда оснащены оргтехникой и связью. Используются возможности интернета и базы данных «Консультант Плюс». Оформлены стенды, позволяющие проводить вводный инструктаж работников при поступлении на работу, а также занятия с руководителями и специалистами. Имеются видеофильмы по вопросам охраны труда, которые используются в авиационном учебном центре при обучении работников профессии.</p>
+                
+        </div>
+          </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Забота о здоровье
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample1">
+            <div class="card card-body">
+                <h5 class="text-secondary">Медосмотр</h5>
+                <p class="text-secondary">Периодические медицинские осмотры на предприятии проводятся в соответствии с Положением «О проведении обязательных предварительных при поступлении на работу и периодических медицинских осмотров работников АО "Шереметьево Безопасность".</p>
+                <p class="text-secondary">Перечень контингента лиц АО "Шереметьево Безопасность", подлежащих периодическому медицинскому осмотру в 2008 г. согласован с ТО У Роспотребнадзора по г. Москве на транспорте в Шереметьево.</p>
+         <div class="col-xs-1" align="center">
+                <img src="{{url_for('static', filename="images/med_osmotr.png")}}" class="img-fluid w-50">
+         </div>
+                <p class="text-secondary">Периодический медицинский осмотр работников предприятия пройдет в  Медико-санитарной части ОАО «Международный аэропорт Шереметьево» в сентябре-октябре 2008 г.</p>
+            </div>
+    </div>
+    <div class="row">
+        <h4 class="text-secondary">Сведения о специальной оценке условий труда
+            <a class="btn " data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+              <img  class="btn_strelk" src={{url_for('static', filename='images/strelka_niz.png')}}>
+            </a>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                <img class="btn_strelk" src={{url_for('static', filename='images/strelka_verh.png')}}>
+            </button>
+        </h4>
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body">
+           <p class="text-secondary">Для проведения специальной оценки условий труда Общество, устанавливает (определяет):</p>
+           <p class="text-secondary">Порядок создания и функционирования комиссии по проведению специальной оценки условий труда, а также права, обязанности и ответственность ее членов;
+            Особенности функционирования комиссии по проведению специальной оценки условий труда при наличии у Общества обособленных структурных подразделений;
+            Организационный порядок проведения специальной оценки условий труда на рабочих местах Общества в части деятельности комиссии по проведению специальной оценки условий труда;
+            Порядок осуществления отбора и заключения договора с организацией, проводящей специальную оценку условий труда, учитывающий необходимость привлечения к данной работе наиболее компетентной в отношении вида деятельности Общества;
+            Порядок урегулирования споров по вопросам специальной оценки условий труда;
+            Порядок использования результатов специальной оценки условий труда.</p>
+           <p class="text-secondary"><strong>УСЛОВИЯ ТРУДА </strong>– совокупность факторов производственной среды и трудового процесса, оказывающих влияние на работоспособность и здоровье работника.</p>
+           <div class="col-xs-1" align="center">
+            <h5 class="text-secondary text-center mb-3">КЛАССЫ УСЛОВИЙ ТРУДА</h5>
+           <img src="{{url_for('static', filename="images/class_job.jpg")}}" class="img-fluid w-50 mb-3">
+           </div>
+           <p class="text-secondary">Общее количество рабочих мест, прошедших специальную оценку условий труда в соответствии с Федеральным законом « О специальной оценке условий труда» - 1224 ед.</p>
+        <p class="text-secondary">Общее количество работников в Обществе составляет 2621.</p>
+        <p class="text-secondary">В АО «Шереметьево Безопасность» по результатам проведенной специальной оценки рабочих мест условия труда признаны<strong> допустимыми.</strong></p>
+    <div class="row">
+      <table class="table table-white table-striped text-secondary text-center">
+        <thead class="mb-4">
+          <tr>
+            <th scope="col" class="text-secondary">№ п.п.
+            </th>
+            <th scope="col" class="text-secondary ">
+              <h5>Мероприятия по улучшению условий труда</h5>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="text-secondary">
+          {% for key, value in events.items()%}
+          <tr>
+           
+            <td class="text-secondary">
+              {{key}}
+            </td>
+            <td class="text-secondary">
+              {{value}}
+            </td>
+          </tr>
+          {%endfor%}
+        </tbody>
+      </table>
+    </div>
+    </div>
+    </div>
+</div>
+{%endblock content%}
