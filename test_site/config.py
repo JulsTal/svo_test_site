@@ -1,13 +1,14 @@
 import os
-
+from dotenv import load_dotenv
+load_dotenv(dotenv_path='test_site/.env')
 class Config(object):
-    SQLALCHEMY_DATABASE_URI='sqlite:///db_svo_sequrity.sqlite3'
-    SECRET_KEY='apple pay'
+    SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI')
+    SECRET_KEY = os.getenv('SECRET_KEY')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    MAIL_SERVER='smtp.gmail.com'
-    MAIL_PORT= 465
-    MAIL_USERNAME = 'juliatalaeva8881@gmail.com'
-    MAIL_PASSWORD= 'voaf hswc szdh dseg'
+    MAIL_SERVER=os.getenv('MAIL_SERVER')
+    MAIL_PORT=os.getenv('MAIL_PORT')
+    MAIL_USERNAME=os.getenv('MAIL_USERNAME')
+    MAIL_PASSWORD=os.getenv('MAIL_PASSWORD')
     MAIL_USE_SSL=True
     
     
