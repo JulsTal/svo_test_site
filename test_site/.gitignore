@@ -1,3 +1,4 @@
-templates/
-.env/
-static/
+/templates/
+.env
+/static/
+/venv/
